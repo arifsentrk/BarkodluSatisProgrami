@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fsatis));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -1080,6 +1081,7 @@
             this.gridsatislistesi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridsatislistesi.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.gridsatislistesi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridsatislistesi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1107,10 +1109,14 @@
             this.gridsatislistesi.Name = "gridsatislistesi";
             this.gridsatislistesi.RowHeadersVisible = false;
             this.gridsatislistesi.RowHeadersWidth = 51;
-            this.gridsatislistesi.RowTemplate.Height = 24;
+            this.gridsatislistesi.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
+            this.gridsatislistesi.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
+            this.gridsatislistesi.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.gridsatislistesi.RowTemplate.Height = 30;
             this.gridsatislistesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridsatislistesi.Size = new System.Drawing.Size(635, 584);
             this.gridsatislistesi.TabIndex = 1;
+            this.gridsatislistesi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridsatislistesi_CellContentClick);
             // 
             // splitContainer2
             // 
@@ -1593,6 +1599,7 @@
             // SIL
             // 
             this.SIL.HeaderText = "SİL";
+            this.SIL.Image = ((System.Drawing.Image)(resources.GetObject("SIL.Image")));
             this.SIL.MinimumWidth = 6;
             this.SIL.Name = "SIL";
             this.SIL.Resizable = System.Windows.Forms.DataGridViewTriState.True;

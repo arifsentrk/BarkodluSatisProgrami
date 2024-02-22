@@ -63,7 +63,7 @@ namespace BarkodluSatisProgrami
                     guncelle.Miktar += Convert.ToDouble(tmiktar.Text);
                     guncelle.Birim = "Adet";
                     guncelle.Tarih = DateTime.Now;
-                    guncelle.Kullanici = lkullanici.Text;                    
+                    guncelle.Kullanici = lkullanici.Text;
                     db.SaveChanges();
                     MessageBox.Show("Ürün Güncellenmiştir.");
                     gridurunler.DataSource = db.Urun.OrderByDescending(a => a.UrunId).Take(10).ToList();
@@ -85,17 +85,21 @@ namespace BarkodluSatisProgrami
                     urun.Kullanici = lkullanici.Text;
                     db.Urun.Add(urun);
                     db.SaveChanges();
-                    if(tbarkod.Text.Length == 8)
+                    if (tbarkod.Text.Length == 8)
                     {
                         var ozelbarkod = db.Barkod.First();
                         ozelbarkod.BarkodNo += 1;
                         db.SaveChanges();
 
                     }
-                    temizle();
+
+
                     gridurunler.DataSource = db.Urun.OrderByDescending(a => a.UrunId).Take(20).ToList();
                     islemler.Gridduzenle(gridurunler);
                 }
+
+                islemler.StokHareket(tbarkod.Text, turunadi.Text, "Adet", Convert.ToDouble(tmiktar.Text), curungrup.Text, lkullanici.Text);
+                temizle();
 
             }
             else
@@ -142,7 +146,7 @@ namespace BarkodluSatisProgrami
             gridurunler.DataSource = db.Urun.OrderByDescending(a => a.UrunId).Take(20).ToList();
             islemler.Gridduzenle(gridurunler);
             liste();
-            
+
 
         }
 
@@ -177,9 +181,9 @@ namespace BarkodluSatisProgrami
 
         private void talisfiyat_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsDigit(e.KeyChar)==false &&   e.KeyChar!=(char)08 && e.KeyChar!=(char)44 && e.KeyChar!=(char)45)        
+            if (char.IsDigit(e.KeyChar) == false && e.KeyChar != (char)08 && e.KeyChar != (char)44 && e.KeyChar != (char)45)
             {
-                e.Handled=true;
+                e.Handled = true;
             }
         }
 
@@ -193,7 +197,7 @@ namespace BarkodluSatisProgrami
 
         private void silToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (gridurunler.Rows.Count>0)
+            if (gridurunler.Rows.Count > 0)
             {
                 int urunid = Convert.ToInt32(gridurunler.CurrentRow.Cells["UrunId"].Value.ToString());
                 string urunad = gridurunler.CurrentRow.Cells["UrunAd"].Value.ToString();
@@ -211,11 +215,11 @@ namespace BarkodluSatisProgrami
                     db.SaveChanges();
                     MessageBox.Show("Ürün Silinmiştir");
                     gridurunler.DataSource = db.Urun.OrderByDescending(a => a.UrunId).Take(20).ToList();
-                    islemler.Gridduzenle(gridurunler);                   
+                    islemler.Gridduzenle(gridurunler);
                     tbarkod.Focus();
                 }
             }
-            
+
         }
     }
 }

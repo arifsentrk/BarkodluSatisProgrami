@@ -75,7 +75,7 @@ namespace SATISPROGRAMIBARKODLU
                 db.SaveChanges();
                 liste();
                 turungrubuadi.Focus();
-                MessageBox.Show(grupad+ "Ürün Grubu Silinmiştir.");
+                MessageBox.Show(grupad + "Ürün Grubu Silinmiştir.");
                 fUrunGiris f = (fUrunGiris)Application.OpenForms["fUrunGiris"];
                 f.liste();
             }

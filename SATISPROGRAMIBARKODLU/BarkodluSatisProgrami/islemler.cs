@@ -67,28 +67,28 @@ namespace SATISPROGRAMIBARKODLU
                         case "UrunGrup":
                             dgv.Columns[i].HeaderText = "Ürün Grubu"; break;
                         case "AlisFiyati":
-                            dgv.Columns[i].HeaderText = "Alış Fiyatı"; 
-                            dgv.Columns[i].DefaultCellStyle.Alignment=DataGridViewContentAlignment.MiddleCenter;
-                            dgv.Columns[i].DefaultCellStyle.Format = "C2";  break;
+                            dgv.Columns[i].HeaderText = "Alış Fiyatı";
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
                         case "SatisFiyati":
                             dgv.Columns[i].HeaderText = "Satış Fiyatı";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                             dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
                         case "KdvOrani":
-                            dgv.Columns[i].HeaderText = "Kdv Oranı"; 
+                            dgv.Columns[i].HeaderText = "Kdv Oranı";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; break;
-                        case "Birim":                            
+                        case "Birim":
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; break;
-                        case "Miktar":                            
+                        case "Miktar":
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; break;
                         case "OdemeSekli":
                             dgv.Columns[i].HeaderText = "Ödeme Şekli";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; break;
-                        case "Kart":                            
-                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight; 
+                        case "Kart":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                             dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
                         case "Nakit":
-                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight; 
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                             dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
                         case "Gelir":
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -109,6 +109,23 @@ namespace SATISPROGRAMIBARKODLU
 
                     }
                 }
+            }
+        }
+
+        public static void StokHareket(string barkod, string urunad, string birim, double miktar, string urungrup, string kullanici)
+        {
+            using (var db = new BarkodluSatisEntities())
+            {
+                StokHareket sh = new StokHareket();
+                sh.Barkod = barkod;
+                sh.UrunAd = urunad;
+                sh.Birim = birim;
+                sh.Miktar = miktar;
+                sh.UrunGrup = urungrup;
+                sh.Kullanici = kullanici;
+                sh.Tarih = DateTime.Now;
+                db.StokHareket.Add(sh);
+                db.SaveChanges();
             }
         }
 

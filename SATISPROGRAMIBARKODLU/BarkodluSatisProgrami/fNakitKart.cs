@@ -93,5 +93,10 @@ namespace SATISPROGRAMIBARKODLU
                 e.Handled = true;
             }
         }
+
+        private void fNakitKart_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

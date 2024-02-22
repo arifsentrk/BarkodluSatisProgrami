@@ -77,7 +77,7 @@ namespace SATISPROGRAMIBARKODLU
 
         private void Tnumeric_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsDigit(e.KeyChar) == false && e.KeyChar != (char)08 && e.KeyChar!=(char)44)
+            if (char.IsDigit(e.KeyChar) == false && e.KeyChar != (char)08 && e.KeyChar != (char)44)
             {
                 e.Handled = true;
             }

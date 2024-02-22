@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarkodluSatisProgrami", "BarkodluSatisProgrami\BarkodluSatisProgrami.csproj", "{E701B0AB-392B-456D-9B5E-AEBF5A1184FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarkodluSatisProgrami", "BarkodluSatisProgrami\BarkodluSatisProgrami.csproj", "{C6F2DC12-1048-4319-9844-48A0EBB62EB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E701B0AB-392B-456D-9B5E-AEBF5A1184FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E701B0AB-392B-456D-9B5E-AEBF5A1184FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E701B0AB-392B-456D-9B5E-AEBF5A1184FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E701B0AB-392B-456D-9B5E-AEBF5A1184FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6F2DC12-1048-4319-9844-48A0EBB62EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F2DC12-1048-4319-9844-48A0EBB62EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F2DC12-1048-4319-9844-48A0EBB62EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F2DC12-1048-4319-9844-48A0EBB62EB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B2FC70D5-109E-4AAB-9F8C-78561A24184E}
+		SolutionGuid = {1F986D09-C23B-4486-A1E9-03EDA521A4A7}
 	EndGlobalSection
 EndGlobal

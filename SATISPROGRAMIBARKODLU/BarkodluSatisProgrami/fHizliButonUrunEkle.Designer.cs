@@ -71,7 +71,7 @@
             this.gridurunler.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridurunler.RowTemplate.Height = 30;
             this.gridurunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridurunler.Size = new System.Drawing.Size(1108, 534);
+            this.gridurunler.Size = new System.Drawing.Size(1017, 447);
             this.gridurunler.TabIndex = 2;
             this.gridurunler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridurunler_CellContentDoubleClick);
             // 
@@ -95,9 +95,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridurunler);
-            this.splitContainer1.Size = new System.Drawing.Size(1108, 683);
+            this.splitContainer1.Size = new System.Drawing.Size(1017, 596);
             this.splitContainer1.SplitterDistance = 145;
-            this.splitContainer1.TabIndex = 1;
+            this.splitContainer1.TabIndex = 2;
             // 
             // lbutonid
             // 
@@ -158,12 +158,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1108, 683);
+            this.ClientSize = new System.Drawing.Size(1017, 596);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FHizliButonUrunEkle";
-            this.Text = "Hızlı Buton Ürün Ekleme";
-            this.Load += new System.EventHandler(this.FHizliButonUrunEkle_Load);
+            this.Text = "fHizliButonUrunEkle";
             ((System.ComponentModel.ISupportInitialize)(this.gridurunler)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -185,4 +183,3 @@
         private System.Windows.Forms.TextBox turunara;
     }
 }
-

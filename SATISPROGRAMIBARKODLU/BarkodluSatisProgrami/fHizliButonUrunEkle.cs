@@ -75,9 +75,6 @@ namespace SATISPROGRAMIBARKODLU
             }
         }
 
-        private void FHizliButonUrunEkle_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -17,7 +17,7 @@ namespace SATISPROGRAMIBARKODLU
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fStok());
+            Application.Run(new FRapor());
         }
     }
 }

@@ -35,3 +35,4 @@ C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatis
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.exe
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.pdb
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fStok.resources
+C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.FRapor.resources

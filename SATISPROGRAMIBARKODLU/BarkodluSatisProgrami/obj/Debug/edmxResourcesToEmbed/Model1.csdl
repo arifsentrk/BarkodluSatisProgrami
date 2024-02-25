@@ -115,5 +115,13 @@
     <EntitySet Name="Terazi" EntityType="Self.Terazi" />
     <EntitySet Name="Urun" EntityType="Self.Urun" />
     <EntitySet Name="UrunGrup" EntityType="Self.UrunGrup" />
+    <EntitySet Name="Sabit" EntityType="BarkodluSatisModel.Sabit" />
   </EntityContainer>
+  <EntityType Name="Sabit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KartKomisyon" Type="Int32" />
+  </EntityType>
 </Schema>

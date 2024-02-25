@@ -10,10 +10,11 @@
         <EntityTypeShape EntityType="BarkodluSatisModel.IslemOzet" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BarkodluSatisModel.İslem" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BarkodluSatisModel.Satis" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="BarkodluSatisModel.StokHareket" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BarkodluSatisModel.StokHareket" Width="1.5" PointX="4.75" PointY="4.875" IsExpanded="true" />
         <EntityTypeShape EntityType="BarkodluSatisModel.Terazi" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BarkodluSatisModel.Urun" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BarkodluSatisModel.UrunGrup" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BarkodluSatisModel.Sabit" Width="1.5" PointX="8.5" PointY="2.625" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

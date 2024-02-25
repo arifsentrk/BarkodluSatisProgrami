@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUrunGiris));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.talisfiyat = new System.Windows.Forms.TextBox();
             this.tsatisfiyat = new System.Windows.Forms.TextBox();
@@ -465,16 +466,30 @@
             // 
             // gridurunler
             // 
+            this.gridurunler.AllowUserToAddRows = false;
+            this.gridurunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridurunler.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridurunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridurunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridurunler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridurunler.EnableHeadersVisualStyles = false;
             this.gridurunler.Location = new System.Drawing.Point(0, 0);
             this.gridurunler.Name = "gridurunler";
+            this.gridurunler.RowHeadersVisible = false;
             this.gridurunler.RowHeadersWidth = 51;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gridurunler.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.gridurunler.RowTemplate.ContextMenuStrip = this.contextMenuStrip1;
             this.gridurunler.RowTemplate.Height = 24;
+            this.gridurunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridurunler.Size = new System.Drawing.Size(1212, 271);
             this.gridurunler.TabIndex = 0;
             // 

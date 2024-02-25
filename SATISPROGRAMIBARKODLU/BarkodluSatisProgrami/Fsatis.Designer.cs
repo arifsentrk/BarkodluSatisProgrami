@@ -1478,6 +1478,7 @@
             this.chsatisiade.TabIndex = 4;
             this.chsatisiade.Text = "SATIŞ YAPILIYOR";
             this.chsatisiade.UseVisualStyleBackColor = false;
+            this.chsatisiade.CheckedChanged += new System.EventHandler(this.chsatisiade_CheckedChanged);
             // 
             // label4
             // 

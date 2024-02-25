@@ -34,5 +34,6 @@ namespace BarkodluSatisProgrami
         public virtual DbSet<Terazi> Terazi { get; set; }
         public virtual DbSet<Urun> Urun { get; set; }
         public virtual DbSet<UrunGrup> UrunGrup { get; set; }
+        public virtual DbSet<Sabit> Sabit { get; set; }
     }
 }

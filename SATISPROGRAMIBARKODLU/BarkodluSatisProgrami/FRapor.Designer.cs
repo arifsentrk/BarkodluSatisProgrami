@@ -28,14 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRapor));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.listfiltre = new System.Windows.Forms.ListBox();
             this.paneltarihler = new System.Windows.Forms.Panel();
             this.datebitis = new System.Windows.Forms.DateTimePicker();
             this.datebaslangic = new System.Windows.Forms.DateTimePicker();
+            this.listfiltre = new System.Windows.Forms.ListBox();
             this.gridliste = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detayGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lkullanici = new SATISPROGRAMIBARKODLU.lstandart();
             this.bgiderekle = new SATISPROGRAMIBARKODLU.bstandart();
             this.bgelirekle = new SATISPROGRAMIBARKODLU.bstandart();
             this.tgiderkart = new SATISPROGRAMIBARKODLU.tnumeric();
@@ -72,6 +77,7 @@
             this.splitContainer1.SuspendLayout();
             this.paneltarihler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridliste)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -84,6 +90,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.lkullanici);
             this.splitContainer1.Panel1.Controls.Add(this.bgiderekle);
             this.splitContainer1.Panel1.Controls.Add(this.bgelirekle);
             this.splitContainer1.Panel1.Controls.Add(this.tgiderkart);
@@ -122,24 +129,6 @@
             this.splitContainer1.SplitterDistance = 299;
             this.splitContainer1.TabIndex = 0;
             // 
-            // listfiltre
-            // 
-            this.listfiltre.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.listfiltre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listfiltre.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.listfiltre.FormattingEnabled = true;
-            this.listfiltre.ItemHeight = 24;
-            this.listfiltre.Items.AddRange(new object[] {
-            "Tümü",
-            "Satışlar",
-            "İade",
-            "Gelir (Satış Hariç)",
-            "Gider (İade Hariç)"});
-            this.listfiltre.Location = new System.Drawing.Point(12, 38);
-            this.listfiltre.Name = "listfiltre";
-            this.listfiltre.Size = new System.Drawing.Size(171, 168);
-            this.listfiltre.TabIndex = 1;
-            // 
             // paneltarihler
             // 
             this.paneltarihler.Controls.Add(this.datebitis);
@@ -167,20 +156,79 @@
             this.datebaslangic.Size = new System.Drawing.Size(270, 32);
             this.datebaslangic.TabIndex = 1;
             // 
+            // listfiltre
+            // 
+            this.listfiltre.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.listfiltre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listfiltre.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.listfiltre.FormattingEnabled = true;
+            this.listfiltre.ItemHeight = 24;
+            this.listfiltre.Items.AddRange(new object[] {
+            "Tümü",
+            "Satışlar",
+            "İade",
+            "Gelir (Satış Hariç)",
+            "Gider (İade Hariç)"});
+            this.listfiltre.Location = new System.Drawing.Point(12, 38);
+            this.listfiltre.Name = "listfiltre";
+            this.listfiltre.Size = new System.Drawing.Size(171, 168);
+            this.listfiltre.TabIndex = 1;
+            // 
             // gridliste
             // 
+            this.gridliste.AllowUserToAddRows = false;
+            this.gridliste.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridliste.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.gridliste.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridliste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridliste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridliste.ContextMenuStrip = this.contextMenuStrip1;
             this.gridliste.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridliste.EnableHeadersVisualStyles = false;
             this.gridliste.Location = new System.Drawing.Point(0, 0);
             this.gridliste.Name = "gridliste";
+            this.gridliste.RowHeadersVisible = false;
             this.gridliste.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridliste.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridliste.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.gridliste.RowTemplate.Height = 24;
             this.gridliste.Size = new System.Drawing.Size(1413, 338);
             this.gridliste.TabIndex = 2;
+            this.gridliste.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridliste_CellFormatting);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detayGösterToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(165, 28);
+            // 
+            // detayGösterToolStripMenuItem
+            // 
+            this.detayGösterToolStripMenuItem.Name = "detayGösterToolStripMenuItem";
+            this.detayGösterToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.detayGösterToolStripMenuItem.Text = "Detay Göster";
+            this.detayGösterToolStripMenuItem.Click += new System.EventHandler(this.detayGösterToolStripMenuItem_Click);
+            // 
+            // lkullanici
+            // 
+            this.lkullanici.AutoSize = true;
+            this.lkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.lkullanici.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lkullanici.Location = new System.Drawing.Point(12, 252);
+            this.lkullanici.Name = "lkullanici";
+            this.lkullanici.Size = new System.Drawing.Size(111, 24);
+            this.lkullanici.TabIndex = 14;
+            this.lkullanici.Text = "KULLANICI";
             // 
             // bgiderekle
             // 
@@ -196,8 +244,10 @@
             this.bgiderekle.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bgiderekle.Size = new System.Drawing.Size(93, 76);
             this.bgiderekle.TabIndex = 13;
+            this.bgiderekle.Text = " ";
             this.bgiderekle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bgiderekle.UseVisualStyleBackColor = false;
+            this.bgiderekle.Click += new System.EventHandler(this.bgiderekle_Click);
             // 
             // bgelirekle
             // 
@@ -213,17 +263,19 @@
             this.bgelirekle.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bgelirekle.Size = new System.Drawing.Size(93, 76);
             this.bgelirekle.TabIndex = 13;
+            this.bgelirekle.Text = "\r\n";
             this.bgelirekle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bgelirekle.UseVisualStyleBackColor = false;
+            this.bgelirekle.Click += new System.EventHandler(this.bgelirekle_Click);
             // 
             // tgiderkart
             // 
             this.tgiderkart.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tgiderkart.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tgiderkart.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tgiderkart.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tgiderkart.Location = new System.Drawing.Point(1154, 257);
             this.tgiderkart.Name = "tgiderkart";
-            this.tgiderkart.Size = new System.Drawing.Size(115, 25);
+            this.tgiderkart.Size = new System.Drawing.Size(115, 21);
             this.tgiderkart.TabIndex = 12;
             this.tgiderkart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -231,10 +283,10 @@
             // 
             this.tgelirkart.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tgelirkart.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tgelirkart.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tgelirkart.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tgelirkart.Location = new System.Drawing.Point(1154, 125);
             this.tgelirkart.Name = "tgelirkart";
-            this.tgelirkart.Size = new System.Drawing.Size(115, 25);
+            this.tgelirkart.Size = new System.Drawing.Size(115, 21);
             this.tgelirkart.TabIndex = 12;
             this.tgelirkart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -242,10 +294,10 @@
             // 
             this.tiadekart.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tiadekart.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tiadekart.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tiadekart.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tiadekart.Location = new System.Drawing.Point(930, 125);
             this.tiadekart.Name = "tiadekart";
-            this.tiadekart.Size = new System.Drawing.Size(115, 25);
+            this.tiadekart.Size = new System.Drawing.Size(115, 21);
             this.tiadekart.TabIndex = 12;
             this.tiadekart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -253,10 +305,10 @@
             // 
             this.tgidernakit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tgidernakit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tgidernakit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tgidernakit.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tgidernakit.Location = new System.Drawing.Point(1154, 208);
             this.tgidernakit.Name = "tgidernakit";
-            this.tgidernakit.Size = new System.Drawing.Size(115, 25);
+            this.tgidernakit.Size = new System.Drawing.Size(115, 21);
             this.tgidernakit.TabIndex = 11;
             this.tgidernakit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -264,10 +316,10 @@
             // 
             this.tkomisyon.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tkomisyon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tkomisyon.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tkomisyon.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tkomisyon.Location = new System.Drawing.Point(908, 236);
             this.tkomisyon.Name = "tkomisyon";
-            this.tkomisyon.Size = new System.Drawing.Size(128, 25);
+            this.tkomisyon.Size = new System.Drawing.Size(128, 21);
             this.tkomisyon.TabIndex = 12;
             this.tkomisyon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -275,10 +327,10 @@
             // 
             this.tkdvtoplam.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tkdvtoplam.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tkdvtoplam.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tkdvtoplam.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tkdvtoplam.Location = new System.Drawing.Point(717, 236);
             this.tkdvtoplam.Name = "tkdvtoplam";
-            this.tkdvtoplam.Size = new System.Drawing.Size(128, 25);
+            this.tkdvtoplam.Size = new System.Drawing.Size(128, 21);
             this.tkdvtoplam.TabIndex = 12;
             this.tkdvtoplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -286,10 +338,10 @@
             // 
             this.tsatiskart.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tsatiskart.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tsatiskart.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tsatiskart.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tsatiskart.Location = new System.Drawing.Point(717, 125);
             this.tsatiskart.Name = "tsatiskart";
-            this.tsatiskart.Size = new System.Drawing.Size(115, 25);
+            this.tsatiskart.Size = new System.Drawing.Size(115, 21);
             this.tsatiskart.TabIndex = 12;
             this.tsatiskart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -297,10 +349,10 @@
             // 
             this.tgelirnakit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tgelirnakit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tgelirnakit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tgelirnakit.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tgelirnakit.Location = new System.Drawing.Point(1154, 76);
             this.tgelirnakit.Name = "tgelirnakit";
-            this.tgelirnakit.Size = new System.Drawing.Size(115, 25);
+            this.tgelirnakit.Size = new System.Drawing.Size(115, 21);
             this.tgelirnakit.TabIndex = 11;
             this.tgelirnakit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -308,10 +360,10 @@
             // 
             this.tiadenakit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tiadenakit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tiadenakit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tiadenakit.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tiadenakit.Location = new System.Drawing.Point(930, 76);
             this.tiadenakit.Name = "tiadenakit";
-            this.tiadenakit.Size = new System.Drawing.Size(115, 25);
+            this.tiadenakit.Size = new System.Drawing.Size(115, 21);
             this.tiadenakit.TabIndex = 11;
             this.tiadenakit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -330,10 +382,10 @@
             // 
             this.tsatisnakit.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tsatisnakit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tsatisnakit.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tsatisnakit.Font = new System.Drawing.Font("Corbel", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tsatisnakit.Location = new System.Drawing.Point(717, 76);
             this.tsatisnakit.Name = "tsatisnakit";
-            this.tsatisnakit.Size = new System.Drawing.Size(115, 25);
+            this.tsatisnakit.Size = new System.Drawing.Size(115, 21);
             this.tsatisnakit.TabIndex = 11;
             this.tsatisnakit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -541,6 +593,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "FRapor";
             this.Text = "RAPORLAMA SAYFASI";
+            this.Load += new System.EventHandler(this.FRapor_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -549,6 +602,7 @@
             this.paneltarihler.ResumeLayout(false);
             this.paneltarihler.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridliste)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -591,5 +645,8 @@
         private SATISPROGRAMIBARKODLU.bstandart bgiderekle;
         private SATISPROGRAMIBARKODLU.bstandart bgelirekle;
         private System.Windows.Forms.DataGridView gridliste;
+        private SATISPROGRAMIBARKODLU.lstandart lkullanici;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem detayGösterToolStripMenuItem;
     }
 }

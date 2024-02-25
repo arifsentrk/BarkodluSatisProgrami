@@ -58,6 +58,8 @@ namespace SATISPROGRAMIBARKODLU
                     {
                         case "Id":
                             dgv.Columns[i].HeaderText = "Numara"; break;
+                        case "İslemNo":
+                            dgv.Columns[i].HeaderText = "İşlem No"; break;
                         case "UrunId":
                             dgv.Columns[i].HeaderText = "Ürun Numarası"; break;
                         case "UrunAd":
@@ -68,6 +70,10 @@ namespace SATISPROGRAMIBARKODLU
                             dgv.Columns[i].HeaderText = "Ürün Grubu"; break;
                         case "AlisFiyati":
                             dgv.Columns[i].HeaderText = "Alış Fiyatı";
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
+                        case "AlisFiyatToplam":
+                            dgv.Columns[i].HeaderText = "Alış Fiyat Toplam";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                             dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
                         case "SatisFiyati":
@@ -104,6 +110,10 @@ namespace SATISPROGRAMIBARKODLU
                             dgv.Columns[i].HeaderText = "Kdv Tutarı";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                             dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
+                        case "Toplam":
+                            dgv.Columns[i].HeaderText = "Toplam";
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
 
 
 
@@ -129,7 +139,25 @@ namespace SATISPROGRAMIBARKODLU
             }
         }
 
+        public static int KartKomisyon()
+        {
+            int sonuc = 0;
+            using (var db = new BarkodluSatisEntities())
+            {
+                if (db.Sabit.Any())
+                {
+                    sonuc = Convert.ToInt16(db.Sabit.First().KartKomisyon);
+                }
+                else
+                {
+                    sonuc = 0;
+                }
+                
+            }
+            return sonuc;
 
+        }
+      
 
     }
 }

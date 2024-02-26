@@ -37,6 +37,14 @@ namespace BarkodluSatisProgrami
                     tsatisfiyat.Text = urun.SatisFiyati.ToString();
                     tmiktar.Text = urun.Miktar.ToString();
                     tkdvorani.Text = urun.KdvOrani.ToString();
+                    if (urun.Birim == "Kg")
+                    {
+                        chgramaj.Checked = true;
+                    }
+                    else
+                    {
+                        chgramaj.Checked = false;
+                    }
 
                 }
                 else
@@ -61,7 +69,15 @@ namespace BarkodluSatisProgrami
                     guncelle.KdvOrani = Convert.ToInt32(tkdvorani.Text);
                     guncelle.KdvTutari = Math.Round(islemler.DoubleYap(tsatisfiyat.Text) * islemler.DoubleYap(tkdvorani.Text) / 100, 2);
                     guncelle.Miktar += Convert.ToDouble(tmiktar.Text);
-                    guncelle.Birim = "Adet";
+                    if (chgramaj.Checked)
+                    {
+                        guncelle.Birim = "Kg";
+
+                    }
+                    else
+                    {
+                        guncelle.Birim = "Adet";
+                    }
                     guncelle.Tarih = DateTime.Now;
                     guncelle.Kullanici = lkullanici.Text;
                     db.SaveChanges();
@@ -80,7 +96,15 @@ namespace BarkodluSatisProgrami
                     urun.KdvOrani = Convert.ToInt32(tkdvorani.Text);
                     urun.KdvTutari = Math.Round(islemler.DoubleYap(tsatisfiyat.Text) * islemler.DoubleYap(tkdvorani.Text) / 100, 2);
                     urun.Miktar = Convert.ToDouble(tmiktar.Text);
-                    urun.Birim = "Adet";
+                    if (chgramaj.Checked)
+                    {
+                        urun.Birim = "Kg";
+
+                    }
+                    else
+                    {
+                        urun.Birim = "Adet";
+                    }
                     urun.Tarih = DateTime.Now;
                     urun.Kullanici = lkullanici.Text;
                     db.Urun.Add(urun);
@@ -138,6 +162,7 @@ namespace BarkodluSatisProgrami
             tmiktar.Text = "0";
             tkdvorani.Text = "8";
             tbarkod.Focus();
+            chgramaj.Checked = false;
         }
 
         private void fUrunGiris_Load(object sender, EventArgs e)
@@ -195,8 +220,26 @@ namespace BarkodluSatisProgrami
             }
         }
 
+
+
+        private void chgramaj_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chgramaj.Checked)
+            {
+                chgramaj.Text = "GRAMAJLI ÜRÜN İŞLEMİ";
+                bbarkodolustur.Enabled = false;
+            }
+            else
+            {
+                chgramaj.Text = "BARKODLU ÜRÜN İŞLEMİ";
+                bbarkodolustur.Enabled = true;
+            }
+
+        }
+
         private void silToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             if (gridurunler.Rows.Count > 0)
             {
                 int urunid = Convert.ToInt32(gridurunler.CurrentRow.Cells["UrunId"].Value.ToString());
@@ -218,8 +261,35 @@ namespace BarkodluSatisProgrami
                     islemler.Gridduzenle(gridurunler);
                     tbarkod.Focus();
                 }
+
             }
 
         }
+
+        private void düzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gridurunler.Rows.Count > 0)
+            {
+                tbarkod.Text = gridurunler.CurrentRow.Cells["Barkod"].Value.ToString();
+                turunadi.Text = gridurunler.CurrentRow.Cells["UrunAd"].Value.ToString();
+                taciklama.Text = gridurunler.CurrentRow.Cells["Acıklama"].Value.ToString();
+                curungrup.Text = gridurunler.CurrentRow.Cells["UrunGrup"].Value.ToString();
+                talisfiyat.Text = gridurunler.CurrentRow.Cells["AlisFiyati"].Value.ToString();
+                tsatisfiyat.Text = gridurunler.CurrentRow.Cells["SatisFiyati"].Value.ToString();
+                tkdvorani.Text = gridurunler.CurrentRow.Cells["KdvOrani"].Value.ToString();
+                tmiktar.Text= gridurunler.CurrentRow.Cells["Miktar"].Value.ToString();
+                string birim = gridurunler.CurrentRow.Cells["Birim"].Value.ToString();
+                if (birim == "Kg")
+                {
+                    chgramaj.Checked = true;
+                }
+                else
+                {
+                    chgramaj.Checked = false;
+                }
+
+            }
+        }
     }
 }
+

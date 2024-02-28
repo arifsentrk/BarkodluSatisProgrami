@@ -132,5 +132,23 @@ namespace BarkodluSatisProgrami
                 }
             }
         }
+
+        private void braporal_Click(object sender, EventArgs e)
+        {
+            Raporlar.Baslik = "GENEL RAPOR";
+            Raporlar.SatisKart=tsatiskart.Text;
+            Raporlar.SatisNakit=tsatisnakit.Text;
+            Raporlar.IadeKart=tiadekart.Text;
+            Raporlar.IadeNakit=tiadenakit.Text;
+            Raporlar.GelirKart=tgelirkart.Text;
+            Raporlar.GelirNakit=tgelirnakit.Text;
+            Raporlar.Giderkart=tgiderkart.Text;
+            Raporlar.GiderNakit=tgidernakit.Text;
+            Raporlar.TarihBaslangic=datebaslangic.Value.ToShortDateString();
+            Raporlar.TarihBitis = datebitis.Value.ToShortDateString();
+            Raporlar.KdvToplam=tkdvtoplam.Text;
+            Raporlar.KartKomisyon=tkomisyon.Text;
+            Raporlar.RaporSayfasiRaporu(gridliste);
+        }
     }
 }

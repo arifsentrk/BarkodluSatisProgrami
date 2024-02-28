@@ -33,13 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRapor));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.paneltarihler = new System.Windows.Forms.Panel();
-            this.datebitis = new System.Windows.Forms.DateTimePicker();
-            this.datebaslangic = new System.Windows.Forms.DateTimePicker();
-            this.listfiltre = new System.Windows.Forms.ListBox();
-            this.gridliste = new System.Windows.Forms.DataGridView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.detayGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lkullanici = new SATISPROGRAMIBARKODLU.lstandart();
             this.bgiderekle = new SATISPROGRAMIBARKODLU.bstandart();
             this.bgelirekle = new SATISPROGRAMIBARKODLU.bstandart();
@@ -68,9 +61,17 @@
             this.lstandart7 = new SATISPROGRAMIBARKODLU.lstandart();
             this.lstandart2 = new SATISPROGRAMIBARKODLU.lstandart();
             this.btngoster = new SATISPROGRAMIBARKODLU.bstandart();
+            this.paneltarihler = new System.Windows.Forms.Panel();
+            this.datebitis = new System.Windows.Forms.DateTimePicker();
             this.lstandart5 = new SATISPROGRAMIBARKODLU.lstandart();
+            this.datebaslangic = new System.Windows.Forms.DateTimePicker();
             this.lstandart4 = new SATISPROGRAMIBARKODLU.lstandart();
+            this.listfiltre = new System.Windows.Forms.ListBox();
             this.lstandart1 = new SATISPROGRAMIBARKODLU.lstandart();
+            this.gridliste = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detayGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.braporal = new SATISPROGRAMIBARKODLU.bstandart();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -90,6 +91,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.braporal);
             this.splitContainer1.Panel1.Controls.Add(this.lkullanici);
             this.splitContainer1.Panel1.Controls.Add(this.bgiderekle);
             this.splitContainer1.Panel1.Controls.Add(this.bgelirekle);
@@ -129,102 +131,12 @@
             this.splitContainer1.SplitterDistance = 299;
             this.splitContainer1.TabIndex = 0;
             // 
-            // paneltarihler
-            // 
-            this.paneltarihler.Controls.Add(this.datebitis);
-            this.paneltarihler.Controls.Add(this.lstandart5);
-            this.paneltarihler.Controls.Add(this.datebaslangic);
-            this.paneltarihler.Controls.Add(this.lstandart4);
-            this.paneltarihler.Location = new System.Drawing.Point(189, 38);
-            this.paneltarihler.Name = "paneltarihler";
-            this.paneltarihler.Size = new System.Drawing.Size(290, 170);
-            this.paneltarihler.TabIndex = 6;
-            // 
-            // datebitis
-            // 
-            this.datebitis.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.datebitis.Location = new System.Drawing.Point(9, 107);
-            this.datebitis.Name = "datebitis";
-            this.datebitis.Size = new System.Drawing.Size(268, 32);
-            this.datebitis.TabIndex = 3;
-            // 
-            // datebaslangic
-            // 
-            this.datebaslangic.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.datebaslangic.Location = new System.Drawing.Point(7, 36);
-            this.datebaslangic.Name = "datebaslangic";
-            this.datebaslangic.Size = new System.Drawing.Size(270, 32);
-            this.datebaslangic.TabIndex = 1;
-            // 
-            // listfiltre
-            // 
-            this.listfiltre.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.listfiltre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listfiltre.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.listfiltre.FormattingEnabled = true;
-            this.listfiltre.ItemHeight = 24;
-            this.listfiltre.Items.AddRange(new object[] {
-            "Tümü",
-            "Satışlar",
-            "İade",
-            "Gelir (Satış Hariç)",
-            "Gider (İade Hariç)"});
-            this.listfiltre.Location = new System.Drawing.Point(12, 38);
-            this.listfiltre.Name = "listfiltre";
-            this.listfiltre.Size = new System.Drawing.Size(171, 168);
-            this.listfiltre.TabIndex = 1;
-            // 
-            // gridliste
-            // 
-            this.gridliste.AllowUserToAddRows = false;
-            this.gridliste.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridliste.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.gridliste.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridliste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridliste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridliste.ContextMenuStrip = this.contextMenuStrip1;
-            this.gridliste.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridliste.EnableHeadersVisualStyles = false;
-            this.gridliste.Location = new System.Drawing.Point(0, 0);
-            this.gridliste.Name = "gridliste";
-            this.gridliste.RowHeadersVisible = false;
-            this.gridliste.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridliste.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridliste.RowTemplate.Height = 24;
-            this.gridliste.Size = new System.Drawing.Size(1413, 338);
-            this.gridliste.TabIndex = 2;
-            this.gridliste.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridliste_CellFormatting);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.detayGösterToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(165, 28);
-            // 
-            // detayGösterToolStripMenuItem
-            // 
-            this.detayGösterToolStripMenuItem.Name = "detayGösterToolStripMenuItem";
-            this.detayGösterToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
-            this.detayGösterToolStripMenuItem.Text = "Detay Göster";
-            this.detayGösterToolStripMenuItem.Click += new System.EventHandler(this.detayGösterToolStripMenuItem_Click);
-            // 
             // lkullanici
             // 
             this.lkullanici.AutoSize = true;
             this.lkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
             this.lkullanici.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lkullanici.Location = new System.Drawing.Point(12, 252);
+            this.lkullanici.Location = new System.Drawing.Point(504, 233);
             this.lkullanici.Name = "lkullanici";
             this.lkullanici.Size = new System.Drawing.Size(111, 24);
             this.lkullanici.TabIndex = 14;
@@ -551,6 +463,25 @@
             this.btngoster.UseVisualStyleBackColor = false;
             this.btngoster.Click += new System.EventHandler(this.btngoster_Click);
             // 
+            // paneltarihler
+            // 
+            this.paneltarihler.Controls.Add(this.datebitis);
+            this.paneltarihler.Controls.Add(this.lstandart5);
+            this.paneltarihler.Controls.Add(this.datebaslangic);
+            this.paneltarihler.Controls.Add(this.lstandart4);
+            this.paneltarihler.Location = new System.Drawing.Point(189, 38);
+            this.paneltarihler.Name = "paneltarihler";
+            this.paneltarihler.Size = new System.Drawing.Size(290, 168);
+            this.paneltarihler.TabIndex = 6;
+            // 
+            // datebitis
+            // 
+            this.datebitis.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.datebitis.Location = new System.Drawing.Point(9, 107);
+            this.datebitis.Name = "datebitis";
+            this.datebitis.Size = new System.Drawing.Size(268, 32);
+            this.datebitis.TabIndex = 3;
+            // 
             // lstandart5
             // 
             this.lstandart5.AutoSize = true;
@@ -561,6 +492,14 @@
             this.lstandart5.Size = new System.Drawing.Size(122, 24);
             this.lstandart5.TabIndex = 2;
             this.lstandart5.Text = "BİTİŞ TARİHİ";
+            // 
+            // datebaslangic
+            // 
+            this.datebaslangic.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.datebaslangic.Location = new System.Drawing.Point(7, 36);
+            this.datebaslangic.Name = "datebaslangic";
+            this.datebaslangic.Size = new System.Drawing.Size(270, 32);
+            this.datebaslangic.TabIndex = 1;
             // 
             // lstandart4
             // 
@@ -573,6 +512,24 @@
             this.lstandart4.TabIndex = 0;
             this.lstandart4.Text = "BAŞLANGIÇ TARİHİ";
             // 
+            // listfiltre
+            // 
+            this.listfiltre.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.listfiltre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listfiltre.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.listfiltre.FormattingEnabled = true;
+            this.listfiltre.ItemHeight = 24;
+            this.listfiltre.Items.AddRange(new object[] {
+            "Tümü",
+            "Satışlar",
+            "İade",
+            "Gelir (Satış Hariç)",
+            "Gider (İade Hariç)"});
+            this.listfiltre.Location = new System.Drawing.Point(12, 38);
+            this.listfiltre.Name = "listfiltre";
+            this.listfiltre.Size = new System.Drawing.Size(171, 168);
+            this.listfiltre.TabIndex = 1;
+            // 
             // lstandart1
             // 
             this.lstandart1.AutoSize = true;
@@ -583,6 +540,72 @@
             this.lstandart1.Size = new System.Drawing.Size(175, 24);
             this.lstandart1.TabIndex = 0;
             this.lstandart1.Text = "FİLTRELEME TÜRÜ";
+            // 
+            // gridliste
+            // 
+            this.gridliste.AllowUserToAddRows = false;
+            this.gridliste.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridliste.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.gridliste.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridliste.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridliste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridliste.ContextMenuStrip = this.contextMenuStrip1;
+            this.gridliste.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridliste.EnableHeadersVisualStyles = false;
+            this.gridliste.Location = new System.Drawing.Point(0, 0);
+            this.gridliste.Name = "gridliste";
+            this.gridliste.RowHeadersVisible = false;
+            this.gridliste.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridliste.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridliste.RowTemplate.Height = 24;
+            this.gridliste.Size = new System.Drawing.Size(1413, 338);
+            this.gridliste.TabIndex = 2;
+            this.gridliste.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridliste_CellFormatting);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detayGösterToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(165, 28);
+            // 
+            // detayGösterToolStripMenuItem
+            // 
+            this.detayGösterToolStripMenuItem.Name = "detayGösterToolStripMenuItem";
+            this.detayGösterToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.detayGösterToolStripMenuItem.Text = "Detay Göster";
+            this.detayGösterToolStripMenuItem.Click += new System.EventHandler(this.detayGösterToolStripMenuItem_Click);
+            // 
+            // braporal
+            // 
+            this.braporal.BackColor = System.Drawing.Color.DarkGreen;
+            this.braporal.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.braporal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.braporal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.braporal.ForeColor = System.Drawing.Color.White;
+            this.braporal.Image = ((System.Drawing.Image)(resources.GetObject("braporal.Image")));
+            this.braporal.Location = new System.Drawing.Point(12, 215);
+            this.braporal.Margin = new System.Windows.Forms.Padding(0);
+            this.braporal.MaximumSize = new System.Drawing.Size(175, 75);
+            this.braporal.MinimumSize = new System.Drawing.Size(175, 75);
+            this.braporal.Name = "braporal";
+            this.braporal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.braporal.Size = new System.Drawing.Size(175, 75);
+            this.braporal.TabIndex = 16;
+            this.braporal.Text = "RAPOR AL";
+            this.braporal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.braporal.UseVisualStyleBackColor = false;
+            this.braporal.Click += new System.EventHandler(this.braporal_Click);
             // 
             // FRapor
             // 
@@ -648,5 +671,6 @@
         private SATISPROGRAMIBARKODLU.lstandart lkullanici;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem detayGösterToolStripMenuItem;
+        private SATISPROGRAMIBARKODLU.bstandart braporal;
     }
 }

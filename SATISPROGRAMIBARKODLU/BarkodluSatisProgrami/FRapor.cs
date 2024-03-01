@@ -107,7 +107,7 @@ namespace BarkodluSatisProgrami
         {
             FGelirGider f = new FGelirGider();
             f.gelirgider = "GELİR";
-            f.kullanici = lkullanici.Text;
+            f.kullanici = lstnkullanici.Text;
             f.ShowDialog();
         }
 
@@ -115,7 +115,7 @@ namespace BarkodluSatisProgrami
         {
             FGelirGider f = new FGelirGider();
             f.gelirgider = "GİDER";
-            f.kullanici = lkullanici.Text;
+            f.kullanici = lstnkullanici.Text;
             f.ShowDialog();
         }
 

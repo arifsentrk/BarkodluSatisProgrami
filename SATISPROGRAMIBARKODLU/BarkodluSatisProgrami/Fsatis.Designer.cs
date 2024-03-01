@@ -1340,7 +1340,7 @@
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewImageColumn2});
             this.gridbekle.EnableHeadersVisualStyles = false;
-            this.gridbekle.Location = new System.Drawing.Point(346, 5);
+            this.gridbekle.Location = new System.Drawing.Point(238, 10);
             this.gridbekle.Name = "gridbekle";
             this.gridbekle.RowHeadersVisible = false;
             this.gridbekle.RowHeadersWidth = 51;
@@ -1349,7 +1349,7 @@
             this.gridbekle.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridbekle.RowTemplate.Height = 30;
             this.gridbekle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridbekle.Size = new System.Drawing.Size(595, 95);
+            this.gridbekle.Size = new System.Drawing.Size(155, 28);
             this.gridbekle.TabIndex = 8;
             this.gridbekle.Visible = false;
             // 
@@ -1455,8 +1455,9 @@
             // 
             // lKullanici
             // 
+            this.lKullanici.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lKullanici.AutoSize = true;
-            this.lKullanici.Location = new System.Drawing.Point(450, 22);
+            this.lKullanici.Location = new System.Drawing.Point(474, 20);
             this.lKullanici.Name = "lKullanici";
             this.lKullanici.Size = new System.Drawing.Size(56, 16);
             this.lKullanici.TabIndex = 5;
@@ -1982,7 +1983,6 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         public System.Windows.Forms.Label lnakit;
         public System.Windows.Forms.Label lkart;
-        private System.Windows.Forms.Label lKullanici;
         private System.Windows.Forms.CheckBox chsatisiade;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -2013,5 +2013,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MIKTAR;
         private System.Windows.Forms.DataGridViewImageColumn SIL;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        public System.Windows.Forms.Label lKullanici;
     }
 }

@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUrunGiris));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.talisfiyat = new System.Windows.Forms.TextBox();
             this.tsatisfiyat = new System.Windows.Forms.TextBox();
             this.curungrup = new System.Windows.Forms.ComboBox();
             this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.gridurunler = new System.Windows.Forms.DataGridView();
             this.chgramaj = new System.Windows.Forms.CheckBox();
             this.lstandart11 = new SATISPROGRAMIBARKODLU.lstandart();
             this.lkullanici = new SATISPROGRAMIBARKODLU.lstandart();
@@ -64,7 +64,7 @@
             this.lstandart3 = new SATISPROGRAMIBARKODLU.lstandart();
             this.lstandart2 = new SATISPROGRAMIBARKODLU.lstandart();
             this.lstandart1 = new SATISPROGRAMIBARKODLU.lstandart();
-            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gridurunler = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -105,7 +105,7 @@
             // silToolStripMenuItem
             // 
             this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
             this.silToolStripMenuItem.Text = "Sil";
             this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
@@ -116,7 +116,14 @@
             this.silToolStripMenuItem,
             this.düzenleToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 80);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(133, 52);
+            // 
+            // düzenleToolStripMenuItem
+            // 
+            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
+            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.düzenleToolStripMenuItem.Text = "Düzenle";
+            this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -165,35 +172,6 @@
             this.splitContainer1.SplitterDistance = 402;
             this.splitContainer1.TabIndex = 2;
             // 
-            // gridurunler
-            // 
-            this.gridurunler.AllowUserToAddRows = false;
-            this.gridurunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridurunler.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridurunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridurunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridurunler.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridurunler.EnableHeadersVisualStyles = false;
-            this.gridurunler.Location = new System.Drawing.Point(0, 0);
-            this.gridurunler.Name = "gridurunler";
-            this.gridurunler.RowHeadersVisible = false;
-            this.gridurunler.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gridurunler.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridurunler.RowTemplate.ContextMenuStrip = this.contextMenuStrip1;
-            this.gridurunler.RowTemplate.Height = 24;
-            this.gridurunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridurunler.Size = new System.Drawing.Size(1212, 271);
-            this.gridurunler.TabIndex = 0;
-            // 
             // chgramaj
             // 
             this.chgramaj.Appearance = System.Windows.Forms.Appearance.Button;
@@ -214,10 +192,11 @@
             // 
             // lstandart11
             // 
+            this.lstandart11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lstandart11.AutoSize = true;
             this.lstandart11.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
             this.lstandart11.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lstandart11.Location = new System.Drawing.Point(984, 9);
+            this.lstandart11.Location = new System.Drawing.Point(917, 9);
             this.lstandart11.Name = "lstandart11";
             this.lstandart11.Size = new System.Drawing.Size(121, 24);
             this.lstandart11.TabIndex = 25;
@@ -225,10 +204,11 @@
             // 
             // lkullanici
             // 
+            this.lkullanici.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lkullanici.AutoSize = true;
             this.lkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
             this.lkullanici.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lkullanici.Location = new System.Drawing.Point(1111, 9);
+            this.lkullanici.Location = new System.Drawing.Point(1044, 9);
             this.lkullanici.Name = "lkullanici";
             this.lkullanici.Size = new System.Drawing.Size(86, 24);
             this.lkullanici.TabIndex = 24;
@@ -279,13 +259,14 @@
             // 
             // braporal
             // 
+            this.braporal.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.braporal.BackColor = System.Drawing.Color.DarkGreen;
             this.braporal.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
             this.braporal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.braporal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.braporal.ForeColor = System.Drawing.Color.White;
             this.braporal.Image = ((System.Drawing.Image)(resources.GetObject("braporal.Image")));
-            this.braporal.Location = new System.Drawing.Point(943, 306);
+            this.braporal.Location = new System.Drawing.Point(1023, 303);
             this.braporal.Margin = new System.Windows.Forms.Padding(0);
             this.braporal.MaximumSize = new System.Drawing.Size(180, 90);
             this.braporal.MinimumSize = new System.Drawing.Size(180, 90);
@@ -305,7 +286,7 @@
             this.bkaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bkaydet.ForeColor = System.Drawing.Color.White;
             this.bkaydet.Image = ((System.Drawing.Image)(resources.GetObject("bkaydet.Image")));
-            this.bkaydet.Location = new System.Drawing.Point(829, 154);
+            this.bkaydet.Location = new System.Drawing.Point(550, 214);
             this.bkaydet.Margin = new System.Windows.Forms.Padding(0);
             this.bkaydet.MaximumSize = new System.Drawing.Size(180, 90);
             this.bkaydet.MinimumSize = new System.Drawing.Size(180, 90);
@@ -326,9 +307,9 @@
             this.biptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.biptal.ForeColor = System.Drawing.Color.White;
             this.biptal.Image = ((System.Drawing.Image)(resources.GetObject("biptal.Image")));
-            this.biptal.Location = new System.Drawing.Point(829, 56);
+            this.biptal.Location = new System.Drawing.Point(758, 214);
             this.biptal.Margin = new System.Windows.Forms.Padding(0);
-            this.biptal.MaximumSize = new System.Drawing.Size(180, 0);
+            this.biptal.MaximumSize = new System.Drawing.Size(180, 90);
             this.biptal.MinimumSize = new System.Drawing.Size(180, 90);
             this.biptal.Name = "biptal";
             this.biptal.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -516,12 +497,34 @@
             this.lstandart1.TabIndex = 0;
             this.lstandart1.Text = "BARKOD:";
             // 
-            // düzenleToolStripMenuItem
+            // gridurunler
             // 
-            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.düzenleToolStripMenuItem.Text = "Düzenle";
-            this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
+            this.gridurunler.AllowUserToAddRows = false;
+            this.gridurunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridurunler.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridurunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.gridurunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridurunler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridurunler.EnableHeadersVisualStyles = false;
+            this.gridurunler.Location = new System.Drawing.Point(0, 0);
+            this.gridurunler.Name = "gridurunler";
+            this.gridurunler.RowHeadersVisible = false;
+            this.gridurunler.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gridurunler.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.gridurunler.RowTemplate.ContextMenuStrip = this.contextMenuStrip1;
+            this.gridurunler.RowTemplate.Height = 24;
+            this.gridurunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridurunler.Size = new System.Drawing.Size(1212, 271);
+            this.gridurunler.TabIndex = 0;
             // 
             // fUrunGiris
             // 

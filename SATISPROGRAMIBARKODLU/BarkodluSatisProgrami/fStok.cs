@@ -112,5 +112,26 @@ namespace BarkodluSatisProgrami
             }
             
         }
+
+        private void btnrapor_Click(object sender, EventArgs e)
+        {
+            if (cmbislemturu.SelectedIndex==0)
+            {
+                Raporlar.Baslik = cmbislemturu.Text + "RAPORU";
+                Raporlar.TarihBaslangic = datebaslangic.Value.ToShortDateString();
+                Raporlar.TarihBitis = datebitis.Value.ToShortDateString();
+                Raporlar.StokRaporu(gridliste);
+            }
+            else if (cmbislemturu.SelectedIndex == 1)
+            {
+                Raporlar.Baslik = cmbislemturu.Text + "RAPORU";
+                Raporlar.TarihBaslangic = datebaslangic.Value.ToShortDateString();
+                Raporlar.TarihBitis = datebitis.Value.ToShortDateString();
+                Raporlar.Stokizleme(gridliste);
+
+            }
+
+            
+        }
     }
 }

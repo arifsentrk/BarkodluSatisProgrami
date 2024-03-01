@@ -79,6 +79,7 @@ namespace BarkodluSatisProgrami
             Cursor.Current = Cursors.Default;
 
         }
+
         public static void StokRaporu(DataGridView dgv)
         {
             Cursor.Current = Cursors.WaitCursor;
@@ -92,7 +93,7 @@ namespace BarkodluSatisProgrami
                     UrunAd = dgv.Rows[i].Cells["UrunAd"].Value.ToString(),
                     Birim = dgv.Rows[i].Cells["Birim"].Value.ToString(),
                     SatisFiyati = islemler.DoubleYap(dgv.Rows[i].Cells["SatisFiyati"].Value.ToString()),
-                    Miktar = islemler.DoubleYap(dgv.Rows[i].Cells["Miktar"].Value.ToString()),
+                    Miktar = islemler.DoubleYap(dgv.Rows[i].Cells["Barkod"].Value.ToString()),
                     Acıklama = dgv.Rows[i].Cells["Acıklama"].Value.ToString(),
                     Tarih = Convert.ToDateTime(dgv.Rows[i].Cells["Tarih"].Value.ToString()),
                     Kullanici = dgv.Rows[i].Cells["Kullanici"].Value.ToString(),
@@ -108,53 +109,27 @@ namespace BarkodluSatisProgrami
             f.reportViewer1.LocalReport.DataSources.Add(rs);
             f.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\rpStokUrun.rdlc";
 
-            ReportParameter[] prm = new ReportParameter[3];
-            prm[0] = new ReportParameter("Baslik", Baslik);
-            prm[1] = new ReportParameter("TarihBaslangic", TarihBaslangic);
-            prm[2] = new ReportParameter("TarihBitis", TarihBitis);           
-            f.reportViewer1.LocalReport.SetParameters(prm);
-            f.reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
-            f.reportViewer1.ZoomMode = ZoomMode.PageWidth;
-            f.ShowDialog();
-            Cursor.Current = Cursors.Default;
-        }
-        public static void Stokizleme(DataGridView dgv)
-        {
-            Cursor.Current = Cursors.WaitCursor;
-            List<StokHareket> list = new List<StokHareket>();
-            list.Clear();
-            for (int i = 0; i < dgv.Rows.Count; i++)
-            {
-                list.Add(new StokHareket
-                {
-                    Barkod = dgv.Rows[i].Cells["Barkod"].Value.ToString(),
-                    UrunAd = dgv.Rows[i].Cells["UrunAd"].Value.ToString(),
-                    UrunGrup = dgv.Rows[i].Cells["UrunGrup"].Value.ToString(),
-                    Birim = dgv.Rows[i].Cells["Birim"].Value.ToString(),
-                    Miktar = islemler.DoubleYap(dgv.Rows[i].Cells["Miktar"].Value.ToString()),
-                    Tarih = Convert.ToDateTime(dgv.Rows[i].Cells["Tarih"].Value.ToString()),
-                    Kullanici = dgv.Rows[i].Cells["Kullanici"].Value.ToString(),
-                });
-
-
-            }
-            ReportDataSource rs = new ReportDataSource();
-            rs.Name = "dsStokizleme";
-            rs.Value = list;
-            fRaporGoster f = new fRaporGoster();
-            f.reportViewer1.LocalReport.DataSources.Clear();
-            f.reportViewer1.LocalReport.DataSources.Add(rs);
-            f.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\rpStokizleme.rdlc";
-
-            ReportParameter[] prm = new ReportParameter[3];
+            ReportParameter[] prm = new ReportParameter[13];
             prm[0] = new ReportParameter("Baslik", Baslik);
             prm[1] = new ReportParameter("TarihBaslangic", TarihBaslangic);
             prm[2] = new ReportParameter("TarihBitis", TarihBitis);
+            prm[3] = new ReportParameter("SatisNakit", SatisNakit);
+            prm[4] = new ReportParameter("SatisKart", SatisKart);
+            prm[5] = new ReportParameter("IadeNakit", IadeNakit);
+            prm[6] = new ReportParameter("IadeKart", IadeKart);
+            prm[7] = new ReportParameter("GelirKart", GelirKart);
+            prm[8] = new ReportParameter("GelirNakit", GelirNakit);
+            prm[9] = new ReportParameter("GiderKart", Giderkart);
+            prm[10] = new ReportParameter("GiderNakit", GiderNakit);
+            prm[11] = new ReportParameter("KdvToplam", KdvToplam);
+            prm[12] = new ReportParameter("KartKomisyon", KartKomisyon);
             f.reportViewer1.LocalReport.SetParameters(prm);
             f.reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
             f.reportViewer1.ZoomMode = ZoomMode.PageWidth;
             f.ShowDialog();
+
             Cursor.Current = Cursors.Default;
+
         }
     }
 }

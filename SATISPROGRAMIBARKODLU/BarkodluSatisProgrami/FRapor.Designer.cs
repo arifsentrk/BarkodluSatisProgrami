@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRapor));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRapor));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.lkullanici = new SATISPROGRAMIBARKODLU.lstandart();
+            this.lstnkullanici = new SATISPROGRAMIBARKODLU.lstandart();
+            this.braporal = new SATISPROGRAMIBARKODLU.bstandart();
             this.bgiderekle = new SATISPROGRAMIBARKODLU.bstandart();
             this.bgelirekle = new SATISPROGRAMIBARKODLU.bstandart();
             this.tgiderkart = new SATISPROGRAMIBARKODLU.tnumeric();
@@ -71,7 +72,6 @@
             this.gridliste = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.detayGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.braporal = new SATISPROGRAMIBARKODLU.bstandart();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -91,8 +91,8 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.lstnkullanici);
             this.splitContainer1.Panel1.Controls.Add(this.braporal);
-            this.splitContainer1.Panel1.Controls.Add(this.lkullanici);
             this.splitContainer1.Panel1.Controls.Add(this.bgiderekle);
             this.splitContainer1.Panel1.Controls.Add(this.bgelirekle);
             this.splitContainer1.Panel1.Controls.Add(this.tgiderkart);
@@ -128,19 +128,40 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridliste);
             this.splitContainer1.Size = new System.Drawing.Size(1413, 641);
-            this.splitContainer1.SplitterDistance = 299;
+            this.splitContainer1.SplitterDistance = 324;
             this.splitContainer1.TabIndex = 0;
             // 
-            // lkullanici
+            // lstnkullanici
             // 
-            this.lkullanici.AutoSize = true;
-            this.lkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
-            this.lkullanici.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lkullanici.Location = new System.Drawing.Point(504, 233);
-            this.lkullanici.Name = "lkullanici";
-            this.lkullanici.Size = new System.Drawing.Size(111, 24);
-            this.lkullanici.TabIndex = 14;
-            this.lkullanici.Text = "KULLANICI";
+            this.lstnkullanici.AutoSize = true;
+            this.lstnkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.lstnkullanici.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lstnkullanici.Location = new System.Drawing.Point(12, 295);
+            this.lstnkullanici.Name = "lstnkullanici";
+            this.lstnkullanici.Size = new System.Drawing.Size(111, 24);
+            this.lstnkullanici.TabIndex = 17;
+            this.lstnkullanici.Text = "KULLANICI";
+            // 
+            // braporal
+            // 
+            this.braporal.BackColor = System.Drawing.Color.DarkGreen;
+            this.braporal.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
+            this.braporal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.braporal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.braporal.ForeColor = System.Drawing.Color.White;
+            this.braporal.Image = ((System.Drawing.Image)(resources.GetObject("braporal.Image")));
+            this.braporal.Location = new System.Drawing.Point(12, 215);
+            this.braporal.Margin = new System.Windows.Forms.Padding(0);
+            this.braporal.MaximumSize = new System.Drawing.Size(175, 75);
+            this.braporal.MinimumSize = new System.Drawing.Size(175, 75);
+            this.braporal.Name = "braporal";
+            this.braporal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.braporal.Size = new System.Drawing.Size(175, 75);
+            this.braporal.TabIndex = 16;
+            this.braporal.Text = "RAPOR AL";
+            this.braporal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.braporal.UseVisualStyleBackColor = false;
+            this.braporal.Click += new System.EventHandler(this.braporal_Click);
             // 
             // bgiderekle
             // 
@@ -567,7 +588,7 @@
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gridliste.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.gridliste.RowTemplate.Height = 24;
-            this.gridliste.Size = new System.Drawing.Size(1413, 338);
+            this.gridliste.Size = new System.Drawing.Size(1413, 313);
             this.gridliste.TabIndex = 2;
             this.gridliste.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridliste_CellFormatting);
             // 
@@ -585,27 +606,6 @@
             this.detayGösterToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
             this.detayGösterToolStripMenuItem.Text = "Detay Göster";
             this.detayGösterToolStripMenuItem.Click += new System.EventHandler(this.detayGösterToolStripMenuItem_Click);
-            // 
-            // braporal
-            // 
-            this.braporal.BackColor = System.Drawing.Color.DarkGreen;
-            this.braporal.FlatAppearance.BorderColor = System.Drawing.Color.DarkGreen;
-            this.braporal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.braporal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.braporal.ForeColor = System.Drawing.Color.White;
-            this.braporal.Image = ((System.Drawing.Image)(resources.GetObject("braporal.Image")));
-            this.braporal.Location = new System.Drawing.Point(12, 215);
-            this.braporal.Margin = new System.Windows.Forms.Padding(0);
-            this.braporal.MaximumSize = new System.Drawing.Size(175, 75);
-            this.braporal.MinimumSize = new System.Drawing.Size(175, 75);
-            this.braporal.Name = "braporal";
-            this.braporal.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.braporal.Size = new System.Drawing.Size(175, 75);
-            this.braporal.TabIndex = 16;
-            this.braporal.Text = "RAPOR AL";
-            this.braporal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.braporal.UseVisualStyleBackColor = false;
-            this.braporal.Click += new System.EventHandler(this.braporal_Click);
             // 
             // FRapor
             // 
@@ -668,9 +668,9 @@
         private SATISPROGRAMIBARKODLU.bstandart bgiderekle;
         private SATISPROGRAMIBARKODLU.bstandart bgelirekle;
         private System.Windows.Forms.DataGridView gridliste;
-        private SATISPROGRAMIBARKODLU.lstandart lkullanici;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem detayGösterToolStripMenuItem;
         private SATISPROGRAMIBARKODLU.bstandart braporal;
+        internal SATISPROGRAMIBARKODLU.lstandart lstnkullanici;
     }
 }

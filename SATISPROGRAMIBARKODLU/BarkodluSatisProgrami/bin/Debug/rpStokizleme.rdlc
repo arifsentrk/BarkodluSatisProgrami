@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>86f6a0d1-52da-4cbb-904d-2f6fc5ff5cda</rd:DataSourceID>
+      <rd:DataSourceID>be596004-d7c5-41ac-9391-c36ce55c9ffd</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -92,7 +92,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox6">
+                        <Textbox Name="Textbox7">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -105,12 +105,10 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -126,7 +124,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox8">
+                        <Textbox Name="Textbox9">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -139,12 +137,10 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -160,7 +156,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox10">
+                        <Textbox Name="Textbox11">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -173,12 +169,10 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox10</rd:DefaultName>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -194,7 +188,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox12">
+                        <Textbox Name="Textbox13">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -207,12 +201,10 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox12</rd:DefaultName>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -228,7 +220,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox14">
+                        <Textbox Name="Textbox15">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -241,12 +233,10 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -262,7 +252,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox16">
+                        <Textbox Name="Textbox17">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -275,12 +265,10 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox16</rd:DefaultName>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -296,7 +284,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox18">
+                        <Textbox Name="Textbox19">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -309,12 +297,10 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -466,9 +452,7 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Miktar</rd:DefaultName>
@@ -571,8 +555,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>dsStokizleme</DataSetName>
-            <Top>0.47272cm</Top>
-            <Left>0cm</Left>
+            <Top>0.17639cm</Top>
             <Height>1.2cm</Height>
             <Width>17.5cm</Width>
             <Style>
@@ -582,13 +565,13 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>0.775in</Height>
+        <Height>0.79167in</Height>
         <Style />
       </Body>
-      <Width>6.91667in</Width>
+      <Width>8.03333in</Width>
       <Page>
         <PageHeader>
-          <Height>2.81517cm</Height>
+          <Height>2.54cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -611,8 +594,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Baslik</rd:DefaultName>
-              <Top>0.92287cm</Top>
-              <Height>0.6cm</Height>
+              <Top>0.08143cm</Top>
+              <Height>1.03603cm</Height>
               <Width>17.5cm</Width>
               <Style>
                 <Border>
@@ -639,7 +622,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>TarihBaslangic</rd:DefaultName>
-              <Top>1.52287cm</Top>
+              <Top>1.18802cm</Top>
               <Left>3.65005cm</Left>
               <Height>0.6cm</Height>
               <Width>3.0715cm</Width>
@@ -669,7 +652,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>TarihBitis</rd:DefaultName>
-              <Top>2.12287cm</Top>
+              <Top>1.78802cm</Top>
               <Left>3.65005cm</Left>
               <Height>0.6cm</Height>
               <Width>3.0715cm</Width>
@@ -703,7 +686,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
-              <Top>1.52287cm</Top>
+              <Top>1.22329cm</Top>
               <Height>0.6cm</Height>
               <Width>3.65006cm</Width>
               <ZIndex>3</ZIndex>
@@ -736,7 +719,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
-              <Top>2.15814cm</Top>
+              <Top>1.82329cm</Top>
               <Height>0.6cm</Height>
               <Width>3.65006cm</Width>
               <ZIndex>4</ZIndex>
@@ -758,7 +741,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.18533cm</Height>
+          <Height>1.12183cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -781,7 +764,7 @@
               </Paragraphs>
               <rd:DefaultName>PageNumber</rd:DefaultName>
               <Top>0.17639cm</Top>
-              <Left>7.5cm</Left>
+              <Left>8.95233cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <Style>
@@ -803,10 +786,10 @@
         </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
-        <LeftMargin>2cm</LeftMargin>
-        <RightMargin>2cm</RightMargin>
-        <TopMargin>2cm</TopMargin>
-        <BottomMargin>2cm</BottomMargin>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
@@ -850,5 +833,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>3bfeed84-cf91-41f8-8590-e7a36bc9bed0</rd:ReportID>
+  <rd:ReportID>87cdad62-e527-4565-a890-5c1093834c12</rd:ReportID>
 </Report>

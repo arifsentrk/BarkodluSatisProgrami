@@ -52,7 +52,6 @@ C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatis
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Microsoft.SqlServer.Types.dll
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\EnvDTE.dll
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\stdole.dll
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\EnvDTE.xml
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -115,3 +114,6 @@ C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatis
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fRaporGoster.resources
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\Barkodlu.0AC71609.Up2Date
+C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fBaslangic.resources
+C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\rpStokUrun.rdlc
+C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\rpStokizleme.rdlc

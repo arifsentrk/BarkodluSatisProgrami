@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>ab199f3e-335b-43a8-b04f-b8277816fd46</rd:DataSourceID>
+      <rd:DataSourceID>3e59fa8f-ad6e-497a-b95b-23c408870e16</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -102,9 +102,6 @@
                 <TablixColumn>
                   <Width>2.90892cm</Width>
                 </TablixColumn>
-                <TablixColumn>
-                  <Width>2.90892cm</Width>
-                </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
@@ -165,40 +162,6 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox6</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox8">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Urun Grup</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox8</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -419,38 +382,6 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="UrunGrup">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!UrunGrup.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>UrunGrup</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
                         <Textbox Name="Birim">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -589,7 +520,6 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -603,9 +533,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>dsStokUrun</DataSetName>
-            <Left>0.04225cm</Left>
+            <Top>0.03528cm</Top>
+            <Left>0.12671cm</Left>
             <Height>1.2cm</Height>
-            <Width>20.36244cm</Width>
+            <Width>17.45352cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -613,13 +544,13 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>0.48333in</Height>
+        <Height>0.54167in</Height>
         <Style />
       </Body>
-      <Width>10.17585in</Width>
+      <Width>8.66844in</Width>
       <Page>
         <PageHeader>
-          <Height>2.87753cm</Height>
+          <Height>2.79723cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -642,7 +573,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Baslik</rd:DefaultName>
-              <Top>0.40217cm</Top>
+              <Top>0.32216cm</Top>
+              <Left>0.12671cm</Left>
               <Height>1.03603cm</Height>
               <Width>20.40467cm</Width>
               <Style>
@@ -670,8 +602,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>TarihBaslangic</rd:DefaultName>
-              <Top>1.46587cm</Top>
-              <Left>3.6923cm</Left>
+              <Top>1.39347cm</Top>
+              <Left>3.77676cm</Left>
               <Height>0.6cm</Height>
               <Width>3.0715cm</Width>
               <ZIndex>1</ZIndex>
@@ -700,8 +632,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>TarihBitis</rd:DefaultName>
-              <Top>2.06587cm</Top>
-              <Left>3.6923cm</Left>
+              <Top>1.99347cm</Top>
+              <Left>3.77676cm</Left>
               <Height>0.6cm</Height>
               <Width>3.0715cm</Width>
               <ZIndex>2</ZIndex>
@@ -734,8 +666,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
-              <Top>1.46587cm</Top>
-              <Left>0.04225cm</Left>
+              <Top>1.42874cm</Top>
+              <Left>0.12671cm</Left>
               <Height>0.6cm</Height>
               <Width>3.65006cm</Width>
               <ZIndex>3</ZIndex>
@@ -768,8 +700,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox28</rd:DefaultName>
-              <Top>2.10114cm</Top>
-              <Left>0.04225cm</Left>
+              <Top>2.02874cm</Top>
+              <Left>0.12671cm</Left>
               <Height>0.6cm</Height>
               <Width>3.65006cm</Width>
               <ZIndex>4</ZIndex>
@@ -791,7 +723,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.16417cm</Height>
+          <Height>0.9525cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -813,8 +745,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PageNumber</rd:DefaultName>
-              <Top>0.31383cm</Top>
-              <Left>10.38217cm</Left>
+              <Top>0.14111cm</Top>
+              <Left>8.85347cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <Style>
@@ -836,10 +768,10 @@
         </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
-        <LeftMargin>1cm</LeftMargin>
-        <RightMargin>1cm</RightMargin>
-        <TopMargin>1cm</TopMargin>
-        <BottomMargin>1cm</BottomMargin>
+        <LeftMargin>2cm</LeftMargin>
+        <RightMargin>2cm</RightMargin>
+        <TopMargin>2cm</TopMargin>
+        <BottomMargin>2cm</BottomMargin>
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
@@ -883,5 +815,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>6409559a-392d-4e4c-87b6-31b066f9681c</rd:ReportID>
+  <rd:ReportID>6dec5fd4-0974-4550-8ccf-50637bcf584f</rd:ReportID>
 </Report>

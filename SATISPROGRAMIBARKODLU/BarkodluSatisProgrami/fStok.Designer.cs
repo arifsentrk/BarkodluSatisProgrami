@@ -33,6 +33,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fStok));
             this.lstandart6 = new SATISPROGRAMIBARKODLU.lstandart();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.lkullanici = new SATISPROGRAMIBARKODLU.lstandart();
             this.turunara = new SATISPROGRAMIBARKODLU.tstandart();
             this.gridliste = new System.Windows.Forms.DataGridView();
             this.rburungrubunagore = new System.Windows.Forms.RadioButton();
@@ -51,6 +52,7 @@
             this.lstandart1 = new SATISPROGRAMIBARKODLU.lstandart();
             this.panel4 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnrapor = new SATISPROGRAMIBARKODLU.bstandart();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -90,15 +92,28 @@
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.splitContainer2.Panel1.Controls.Add(this.lkullanici);
             this.splitContainer2.Panel1.Controls.Add(this.turunara);
             this.splitContainer2.Panel1.Controls.Add(this.lstandart6);
             // 
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.gridliste);
-            this.splitContainer2.Size = new System.Drawing.Size(760, 597);
+            this.splitContainer2.Size = new System.Drawing.Size(769, 603);
             this.splitContainer2.SplitterDistance = 77;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // lkullanici
+            // 
+            this.lkullanici.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lkullanici.AutoSize = true;
+            this.lkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.lkullanici.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lkullanici.Location = new System.Drawing.Point(611, 32);
+            this.lkullanici.Name = "lkullanici";
+            this.lkullanici.Size = new System.Drawing.Size(84, 24);
+            this.lkullanici.TabIndex = 2;
+            this.lkullanici.Text = "Kullanıcı";
             // 
             // turunara
             // 
@@ -135,7 +150,7 @@
             this.gridliste.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.gridliste.RowTemplate.Height = 24;
             this.gridliste.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridliste.Size = new System.Drawing.Size(760, 516);
+            this.gridliste.Size = new System.Drawing.Size(769, 522);
             this.gridliste.TabIndex = 1;
             // 
             // rburungrubunagore
@@ -251,11 +266,11 @@
             this.bara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bara.ForeColor = System.Drawing.Color.White;
             this.bara.Image = ((System.Drawing.Image)(resources.GetObject("bara.Image")));
-            this.bara.Location = new System.Drawing.Point(72, 503);
+            this.bara.Location = new System.Drawing.Point(3, 503);
             this.bara.Margin = new System.Windows.Forms.Padding(0);
             this.bara.Name = "bara";
             this.bara.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bara.Size = new System.Drawing.Size(148, 76);
+            this.bara.Size = new System.Drawing.Size(138, 76);
             this.bara.TabIndex = 0;
             this.bara.Text = "ARA";
             this.bara.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -318,6 +333,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.splitContainer1.Panel1.Controls.Add(this.btnrapor);
             this.splitContainer1.Panel1.Controls.Add(this.panel4);
             this.splitContainer1.Panel1.Controls.Add(this.bara);
             this.splitContainer1.Panel1.Controls.Add(this.paneltarihler);
@@ -327,9 +343,27 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1059, 597);
+            this.splitContainer1.Size = new System.Drawing.Size(1068, 603);
             this.splitContainer1.SplitterDistance = 295;
             this.splitContainer1.TabIndex = 1;
+            // 
+            // btnrapor
+            // 
+            this.btnrapor.BackColor = System.Drawing.Color.Green;
+            this.btnrapor.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btnrapor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrapor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnrapor.ForeColor = System.Drawing.Color.White;
+            this.btnrapor.Location = new System.Drawing.Point(150, 503);
+            this.btnrapor.Margin = new System.Windows.Forms.Padding(0);
+            this.btnrapor.Name = "btnrapor";
+            this.btnrapor.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnrapor.Size = new System.Drawing.Size(142, 76);
+            this.btnrapor.TabIndex = 7;
+            this.btnrapor.Text = "RAPOR";
+            this.btnrapor.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnrapor.UseVisualStyleBackColor = false;
+            this.btnrapor.Click += new System.EventHandler(this.btnrapor_Click);
             // 
             // panel2
             // 
@@ -344,7 +378,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 597);
+            this.ClientSize = new System.Drawing.Size(1068, 603);
             this.Controls.Add(this.splitContainer1);
             this.Name = "fStok";
             this.Text = "fStok";
@@ -394,5 +428,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panel2;
+        internal SATISPROGRAMIBARKODLU.lstandart lkullanici;
+        private SATISPROGRAMIBARKODLU.bstandart btnrapor;
     }
 }

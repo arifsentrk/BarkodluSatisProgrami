@@ -40,6 +40,37 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Islemno" Type="Int32" />
   </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Eposta" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="KullaniciAd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Satis" Type="Boolean" />
+    <Property Name="Rapor" Type="Boolean" />
+    <Property Name="Stok" Type="Boolean" />
+    <Property Name="UrunGiris" Type="Boolean" />
+    <Property Name="Ayarlar" Type="Boolean" />
+    <Property Name="FiyatGuncelle" Type="Boolean" />
+    <Property Name="Yedekleme" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Sabit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KartKomisyon" Type="Int32" />
+    <Property Name="Yazici" Type="Boolean" />
+    <Property Name="AdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Unvan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Eposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
   <EntityType Name="Satis">
     <Key>
       <PropertyRef Name="SatisId" />
@@ -59,6 +90,26 @@
     <Property Name="Iade" Type="Boolean" />
     <Property Name="Tarih" Type="DateTime" Precision="3" />
     <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StokHareket">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Barkod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UrunAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Birim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Miktar" Type="Double" />
+    <Property Name="UrunGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KartKomisyon" Type="Int32" />
   </EntityType>
   <EntityType Name="Terazi">
     <Key>
@@ -97,7 +148,11 @@
     <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" />
     <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" />
     <EntitySet Name="İslem" EntityType="Self.İslem" />
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" />
+    <EntitySet Name="Sabit" EntityType="Self.Sabit" />
     <EntitySet Name="Satis" EntityType="Self.Satis" />
+    <EntitySet Name="StokHareket" EntityType="Self.StokHareket" />
+    <EntitySet Name="Table" EntityType="Self.Table" />
     <EntitySet Name="Terazi" EntityType="Self.Terazi" />
     <EntitySet Name="Urun" EntityType="Self.Urun" />
     <EntitySet Name="UrunGrup" EntityType="Self.UrunGrup" />

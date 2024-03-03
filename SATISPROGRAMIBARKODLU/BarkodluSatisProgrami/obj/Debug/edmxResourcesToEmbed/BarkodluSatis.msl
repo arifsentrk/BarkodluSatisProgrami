@@ -45,6 +45,39 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="BarkodluSatisModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="KullaniciAd" ColumnName="KullaniciAd" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Satis" ColumnName="Satis" />
+          <ScalarProperty Name="Rapor" ColumnName="Rapor" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="UrunGiris" ColumnName="UrunGiris" />
+          <ScalarProperty Name="Ayarlar" ColumnName="Ayarlar" />
+          <ScalarProperty Name="FiyatGuncelle" ColumnName="FiyatGuncelle" />
+          <ScalarProperty Name="Yedekleme" ColumnName="Yedekleme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sabit">
+      <EntityTypeMapping TypeName="BarkodluSatisModel.Sabit">
+        <MappingFragment StoreEntitySet="Sabit">
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Yazici" ColumnName="Yazici" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KartKomisyon" ColumnName="KartKomisyon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Satis">
       <EntityTypeMapping TypeName="BarkodluSatisModel.Satis">
         <MappingFragment StoreEntitySet="Satis">
@@ -63,6 +96,28 @@
           <ScalarProperty Name="Iade" ColumnName="Iade" />
           <ScalarProperty Name="Tarih" ColumnName="Tarih" />
           <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StokHareket">
+      <EntityTypeMapping TypeName="BarkodluSatisModel.StokHareket">
+        <MappingFragment StoreEntitySet="StokHareket">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Barkod" ColumnName="Barkod" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="UrunGrup" ColumnName="UrunGrup" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="BarkodluSatisModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KartKomisyon" ColumnName="KartKomisyon" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

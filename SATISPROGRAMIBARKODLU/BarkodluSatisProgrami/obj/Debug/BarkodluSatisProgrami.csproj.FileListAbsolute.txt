@@ -9,21 +9,6 @@ C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatis
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\SATISPROGRAMIBARKODLU.fUrunGrubuEkle.resources
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\BarkodluSatis.mdf
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\BarkodluSatis_log.ldf
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Model1.Context.tt
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Model1.tt
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Barkod.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\HizliUrun.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\IslemOzet.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Model1.Context.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Model1.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Model1.Designer.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Satis.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\StokHareket.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Terazi.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Urun.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\UrunGrup.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\İslem.cs
-C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\Model1.edmx.diagram
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\BarkodluSatisProgrami.exe.config
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\BarkodluSatisProgrami.exe
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\BarkodluSatisProgrami.pdb
@@ -117,3 +102,5 @@ C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatis
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fBaslangic.resources
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\rpStokUrun.rdlc
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\rpStokizleme.rdlc
+C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fFiyatGuncelle.resources
+C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fAyarlar.resources

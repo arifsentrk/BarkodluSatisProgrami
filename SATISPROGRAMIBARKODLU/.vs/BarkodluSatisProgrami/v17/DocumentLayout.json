@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|c:\\users\\ar\u0130f\\desktop\\satisprogramibarkodlu\\barkodlusatisprogrami\\barkodlusatisprogrami\\fayarlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|solutionrelative:barkodlusatisprogrami\\fayarlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 330,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fAyarlar.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\BarkodluSatisProgrami\\fAyarlar.cs",
+              "RelativeDocumentMoniker": "BarkodluSatisProgrami\\fAyarlar.cs",
+              "ToolTip": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\BarkodluSatisProgrami\\fAyarlar.cs [Design]",
+              "RelativeToolTip": "BarkodluSatisProgrami\\fAyarlar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T11:37:37.947Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

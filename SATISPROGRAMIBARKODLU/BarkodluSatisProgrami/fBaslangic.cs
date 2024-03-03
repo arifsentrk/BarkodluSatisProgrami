@@ -42,7 +42,7 @@ namespace BarkodluSatisProgrami
         {
             Cursor.Current = Cursors.WaitCursor;
             fStok f = new fStok();
-            f.lkullanici.Text = lkullanici.Text;  
+            f.lkullanici.Text = lkullanici.Text;
             f.ShowDialog();
             Cursor.Current = Cursors.Default;
 
@@ -52,7 +52,7 @@ namespace BarkodluSatisProgrami
         {
             Cursor.Current = Cursors.WaitCursor;
             fUrunGiris f = new fUrunGiris();
-            f.lkullanici.Text= lkullanici.Text;
+            f.lkullanici.Text = lkullanici.Text;
             f.ShowDialog();
             Cursor.Current = Cursors.Default;
 
@@ -61,6 +61,18 @@ namespace BarkodluSatisProgrami
         private void btncikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnfiyatguncelle_Click(object sender, EventArgs e)
+        {
+            fFiyatGuncelle f = new fFiyatGuncelle();
+            f.ShowDialog();
+        }
+
+        private void btnayarlar_Click(object sender, EventArgs e)
+        {
+            fAyarlar f = new fAyarlar();
+            f.ShowDialog();
         }
     }
 }

@@ -135,8 +135,7 @@ namespace SATISPROGRAMIBARKODLU
 
         private void UrunGetirListeye(Urun urun, string barkod, double miktar)
         {
-            int satirsayisi = gridsatislistesi.Rows.Count;
-            //double miktar = Convert.ToDouble(tmiktar.Text);
+            int satirsayisi = gridsatislistesi.Rows.Count;            
             bool eklenmismi = false;
             if (satirsayisi > 0)
             {
@@ -146,7 +145,12 @@ namespace SATISPROGRAMIBARKODLU
                     {
                         gridsatislistesi.Rows[i].Cells["Miktar"].Value = miktar + Convert.ToDouble(gridsatislistesi.Rows[i].Cells["Miktar"].Value);
                         gridsatislistesi.Rows[i].Cells["Toplam"].Value = Math.Round(Convert.ToDouble(gridsatislistesi.Rows[i].Cells["Miktar"].Value) * Convert.ToDouble(gridsatislistesi.Rows[i].Cells["Fiyat"].Value), 2);
+                        double dblkdvtutari = (double)urun.KdvTutari;
+                        gridsatislistesi.Rows[i].Cells["KdvTutari"].Value = Convert.ToDouble(gridsatislistesi.Rows[i].Cells["Miktar"].Value) * dblkdvtutari;
+                        ;
+
                         eklenmismi |= true;
+
 
                     }
                 }

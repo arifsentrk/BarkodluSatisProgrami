@@ -29,7 +29,11 @@ namespace BarkodluSatisProgrami
         public virtual DbSet<HizliUrun> HizliUrun { get; set; }
         public virtual DbSet<IslemOzet> IslemOzet { get; set; }
         public virtual DbSet<İslem> İslem { get; set; }
+        public virtual DbSet<Kullanici> Kullanici { get; set; }
+        public virtual DbSet<Sabit> Sabit { get; set; }
         public virtual DbSet<Satis> Satis { get; set; }
+        public virtual DbSet<StokHareket> StokHareket { get; set; }
+        public virtual DbSet<Table> Table { get; set; }
         public virtual DbSet<Terazi> Terazi { get; set; }
         public virtual DbSet<Urun> Urun { get; set; }
         public virtual DbSet<UrunGrup> UrunGrup { get; set; }

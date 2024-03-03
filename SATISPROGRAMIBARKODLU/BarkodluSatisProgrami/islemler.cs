@@ -152,12 +152,32 @@ namespace SATISPROGRAMIBARKODLU
                 {
                     sonuc = 0;
                 }
-                
+
             }
             return sonuc;
 
         }
-      
+
+        public static void SabitVarsayilan()
+        {
+            using (var db = new BarkodluSatisEntities())
+            {
+                if (!db.Sabit.Any())
+                {
+                    Sabit s = new Sabit();
+                    s.KartKomisyon = 0;
+                    s.Yazici = false;
+                    s.Adres = "Admin";
+                    s.Unvan = "Admin";
+                    s.Telefon = "Admin";
+                    s.Eposta = "Admin";
+                    db.Sabit.Add(s);
+                    db.SaveChanges();
+                }
+
+            }
+        }
+
 
     }
 }

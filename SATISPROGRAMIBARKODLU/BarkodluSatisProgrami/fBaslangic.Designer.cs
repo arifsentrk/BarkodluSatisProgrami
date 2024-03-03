@@ -39,6 +39,7 @@
             this.btngenelrapor = new System.Windows.Forms.Button();
             this.btnsatisislemi = new System.Windows.Forms.Button();
             this.lkullanici = new System.Windows.Forms.Label();
+            this.lisyeri = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnstoktakibi, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btngenelrapor, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnsatisislemi, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(99, 60);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(62, 57);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -122,6 +123,7 @@
             this.btnfiyatguncelle.TabIndex = 5;
             this.btnfiyatguncelle.Text = "FİYAT GÜNCELLE";
             this.btnfiyatguncelle.UseVisualStyleBackColor = false;
+            this.btnfiyatguncelle.Click += new System.EventHandler(this.btnfiyatguncelle_Click);
             // 
             // btnayarlar
             // 
@@ -136,6 +138,7 @@
             this.btnayarlar.TabIndex = 4;
             this.btnayarlar.Text = "AYARLAR";
             this.btnayarlar.UseVisualStyleBackColor = false;
+            this.btnayarlar.Click += new System.EventHandler(this.btnayarlar_Click);
             // 
             // btnurungiris
             // 
@@ -200,24 +203,38 @@
             // lkullanici
             // 
             this.lkullanici.AutoSize = true;
+            this.lkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lkullanici.ForeColor = System.Drawing.Color.White;
-            this.lkullanici.Location = new System.Drawing.Point(797, 475);
+            this.lkullanici.Location = new System.Drawing.Point(61, 480);
             this.lkullanici.Name = "lkullanici";
-            this.lkullanici.Size = new System.Drawing.Size(56, 16);
+            this.lkullanici.Size = new System.Drawing.Size(84, 24);
             this.lkullanici.TabIndex = 1;
             this.lkullanici.Text = "Kullanıcı";
+            // 
+            // lisyeri
+            // 
+            this.lisyeri.AutoSize = true;
+            this.lisyeri.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lisyeri.ForeColor = System.Drawing.Color.White;
+            this.lisyeri.Location = new System.Drawing.Point(58, 20);
+            this.lisyeri.Name = "lisyeri";
+            this.lisyeri.Size = new System.Drawing.Size(71, 24);
+            this.lisyeri.TabIndex = 2;
+            this.lisyeri.Text = "İŞYERİ";
             // 
             // fBaslangic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(882, 553);
+            this.ClientSize = new System.Drawing.Size(800, 525);
             this.ControlBox = false;
+            this.Controls.Add(this.lisyeri);
             this.Controls.Add(this.lkullanici);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.MaximumSize = new System.Drawing.Size(900, 600);
-            this.MinimumSize = new System.Drawing.Size(900, 600);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(800, 525);
+            this.MinimumSize = new System.Drawing.Size(800, 525);
             this.Name = "fBaslangic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BARKODLU SATIŞ PROGRAMI";
@@ -240,5 +257,6 @@
         private System.Windows.Forms.Button btnstoktakibi;
         private System.Windows.Forms.Button btngenelrapor;
         private System.Windows.Forms.Label lkullanici;
+        private System.Windows.Forms.Label lisyeri;
     }
 }

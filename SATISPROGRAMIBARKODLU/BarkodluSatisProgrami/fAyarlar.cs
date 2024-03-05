@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -167,7 +168,9 @@ namespace BarkodluSatisProgrami
 
         private void fAyarlar_Load(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             doldur();
+            Cursor.Current = Cursors.Default;
         }
 
         private void doldur()
@@ -183,6 +186,16 @@ namespace BarkodluSatisProgrami
                 islemler.SabitVarsayilan();
                 var yazici = db.Sabit.FirstOrDefault();
                 chyazmadurumu.Checked = Convert.ToBoolean(yazici.Yazici);
+
+                var sabitler= db.Sabit.FirstOrDefault();
+                tkartkomisyon.Text=sabitler.KartKomisyon.ToString();
+
+                var terazionek = db.Terazi.ToList();
+                cmbterazionek.DisplayMember = "TeraziOnEk";
+                cmbterazionek.ValueMember = "Id";
+                cmbterazionek.DataSource=terazionek;
+
+
 
             }
         }
@@ -213,6 +226,83 @@ namespace BarkodluSatisProgrami
 
         }
 
+        private void bkartkomisyon_Click(object sender, EventArgs e)
+        {
+            if (tkartkomisyon.Text!="")
+            {
+                using (var db = new BarkodluSatisEntities())
+                {
+                    var sabit = db.Sabit.FirstOrDefault();
+                    sabit.KartKomisyon=Convert.ToInt16(tkartkomisyon.Text);
+                    db.SaveChanges();
+                    MessageBox.Show("Kart Komisyon Ayarlanmıştır.");
+                    
+                }
+            }
+            else
+            {
+                MessageBox.Show("Kart Komisyon Bilgisi Giriniz.");
+            }
+            
+        }
+
+        private void bterazionekkaydet_Click(object sender, EventArgs e)
+        {
+            if (tterazionek.Text!="")
+            {
+                int onek = Convert.ToInt16(tterazionek.Text);
+                using (var db = new BarkodluSatisEntities())
+                {
+                    if (db.Terazi.Any(x=>x.TeraziOnEk==onek))
+                    {
+                        MessageBox.Show(onek.ToString()+ " Ön Ek Zaten Kayıtlıdır. ");
+                    }
+                    else
+                    {
+                        Terazi t = new Terazi();
+                        t.TeraziOnEk = onek;
+                        db.Terazi.Add(t);
+                        db.SaveChanges() ;
+                        MessageBox.Show("Bilgiler Kaydedilmiştir.");
+                        cmbterazionek.DisplayMember = "TeraziOnEk";
+                        cmbterazionek.ValueMember = "Id";
+                        cmbterazionek.DataSource = db.Terazi.ToList();
+                        tterazionek.Clear();
+
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Terazi  Önek Bilgisini Giriniz.");
+            }
+        }
+
+        private void bterazioneksil_Click(object sender, EventArgs e)
+        {
+            if (cmbterazionek.Text!="")
+            {
+                int onekid = Convert.ToInt16(cmbterazionek.SelectedValue);
+                DialogResult onay = MessageBox.Show(cmbterazionek.Text + " Öneki Silmek İstiyormusunuz ? ", "Terazi Önek Silme İşlemi", MessageBoxButtons.YesNo);
+                if (onay==DialogResult.Yes)
+                {
+                    using (var db = new BarkodluSatisEntities())
+                    {
+                        var onek = db.Terazi.Find(onekid);
+                        db.Terazi.Remove(onek);
+                        db.SaveChanges();
+                        cmbterazionek.DisplayMember = "TeraziOnEk";
+                        cmbterazionek.ValueMember = "Id";
+                        cmbterazionek.DataSource = db.Terazi.ToList();  
+                        MessageBox.Show( " Önek Silinmiştir. " );
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ön Ek Seçiniz.");
+            }
+        }
     }
 }
 

@@ -167,6 +167,7 @@ namespace SATISPROGRAMIBARKODLU
                     Sabit s = new Sabit();
                     s.KartKomisyon = 0;
                     s.Yazici = false;
+                    s.AdSoyad = "Admin";
                     s.Adres = "Admin";
                     s.Unvan = "Admin";
                     s.Telefon = "Admin";

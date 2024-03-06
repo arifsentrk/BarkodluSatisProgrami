@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|c:\\users\\ar\u0130f\\desktop\\satisprogramibarkodlu\\barkodlusatisprogrami\\barkodlusatisprogrami\\fayarlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|solutionrelative:barkodlusatisprogrami\\fayarlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|c:\\users\\ar\u0130f\\desktop\\satisprogramibarkodlu\\barkodlusatisprogrami\\barkodlusatisprogrami\\fayarlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|solutionrelative:barkodlusatisprogrami\\fayarlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|c:\\users\\ar\u0130f\\desktop\\satisprogramibarkodlu\\barkodlusatisprogrami\\barkodlusatisprogrami\\islemler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|solutionrelative:barkodlusatisprogrami\\islemler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|c:\\users\\ar\u0130f\\desktop\\satisprogramibarkodlu\\barkodlusatisprogrami\\barkodlusatisprogrami\\fayarlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6F2DC12-1048-4319-9844-48A0EBB62EB7}|BarkodluSatisProgrami\\BarkodluSatisProgrami.csproj|solutionrelative:barkodlusatisprogrami\\fayarlar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,40 +26,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "islemler.cs",
-              "DocumentMoniker": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\BarkodluSatisProgrami\\islemler.cs",
-              "RelativeDocumentMoniker": "BarkodluSatisProgrami\\islemler.cs",
-              "ToolTip": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\BarkodluSatisProgrami\\islemler.cs",
-              "RelativeToolTip": "BarkodluSatisProgrami\\islemler.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAAAswKkAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T21:33:34.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "fAyarlar.cs",
               "DocumentMoniker": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\BarkodluSatisProgrami\\fAyarlar.cs",
               "RelativeDocumentMoniker": "BarkodluSatisProgrami\\fAyarlar.cs",
               "ToolTip": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\BarkodluSatisProgrami\\fAyarlar.cs",
               "RelativeToolTip": "BarkodluSatisProgrami\\fAyarlar.cs",
-              "ViewState": "AQIAABMBAAAAAAAAAAAwwCYBAAA5AAAA",
+              "ViewState": "AQIAAC8BAAAAAAAAAAAtwDoBAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T21:30:50.033Z",
+              "WhenOpened": "2024-03-06T22:26:01.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "fAyarlar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\BarkodluSatisProgrami\\fAyarlar.cs",
               "RelativeDocumentMoniker": "BarkodluSatisProgrami\\fAyarlar.cs",
               "ToolTip": "C:\\Users\\AR\u0130F\\Desktop\\SatisProgramiBarkodlu\\BarkodluSatisProgrami\\BarkodluSatisProgrami\\fAyarlar.cs [Design]",
               "RelativeToolTip": "BarkodluSatisProgrami\\fAyarlar.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T11:37:37.947Z",
+              "WhenOpened": "2024-03-06T22:20:08.781Z",
               "EditorCaption": " [Design]"
             }
           ]

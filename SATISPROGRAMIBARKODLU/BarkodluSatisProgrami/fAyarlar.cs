@@ -180,20 +180,26 @@ namespace BarkodluSatisProgrami
                 if (db.Kullanici.Any())
                 {
                     gridlistekullanici.DataSource = db.Kullanici.Select(x => new { x.Id, x.AdSoyad, x.KullaniciAd, x.Telefon }).ToList();
-                    
-                    
+
+
                 }
                 islemler.SabitVarsayilan();
                 var yazici = db.Sabit.FirstOrDefault();
                 chyazmadurumu.Checked = Convert.ToBoolean(yazici.Yazici);
 
-                var sabitler= db.Sabit.FirstOrDefault();
-                tkartkomisyon.Text=sabitler.KartKomisyon.ToString();
+                var sabitler = db.Sabit.FirstOrDefault();
+                tkartkomisyon.Text = sabitler.KartKomisyon.ToString();
 
                 var terazionek = db.Terazi.ToList();
                 cmbterazionek.DisplayMember = "TeraziOnEk";
                 cmbterazionek.ValueMember = "Id";
-                cmbterazionek.DataSource=terazionek;
+                cmbterazionek.DataSource = terazionek;
+
+                tisyeriadsoyad.Text = sabitler.AdSoyad;
+                tisyeriunvan.Text = sabitler.Unvan;
+                tisyeriadres.Text = sabitler.Adres;
+                mskisyeritelefon.Text = sabitler.Telefon;
+                tisyerieposta.Text = sabitler.Eposta;
 
 
 
@@ -228,41 +234,41 @@ namespace BarkodluSatisProgrami
 
         private void bkartkomisyon_Click(object sender, EventArgs e)
         {
-            if (tkartkomisyon.Text!="")
+            if (tkartkomisyon.Text != "")
             {
                 using (var db = new BarkodluSatisEntities())
                 {
                     var sabit = db.Sabit.FirstOrDefault();
-                    sabit.KartKomisyon=Convert.ToInt16(tkartkomisyon.Text);
+                    sabit.KartKomisyon = Convert.ToInt16(tkartkomisyon.Text);
                     db.SaveChanges();
                     MessageBox.Show("Kart Komisyon Ayarlanmıştır.");
-                    
+
                 }
             }
             else
             {
                 MessageBox.Show("Kart Komisyon Bilgisi Giriniz.");
             }
-            
+
         }
 
         private void bterazionekkaydet_Click(object sender, EventArgs e)
         {
-            if (tterazionek.Text!="")
+            if (tterazionek.Text != "")
             {
                 int onek = Convert.ToInt16(tterazionek.Text);
                 using (var db = new BarkodluSatisEntities())
                 {
-                    if (db.Terazi.Any(x=>x.TeraziOnEk==onek))
+                    if (db.Terazi.Any(x => x.TeraziOnEk == onek))
                     {
-                        MessageBox.Show(onek.ToString()+ " Ön Ek Zaten Kayıtlıdır. ");
+                        MessageBox.Show(onek.ToString() + " Ön Ek Zaten Kayıtlıdır. ");
                     }
                     else
                     {
                         Terazi t = new Terazi();
                         t.TeraziOnEk = onek;
                         db.Terazi.Add(t);
-                        db.SaveChanges() ;
+                        db.SaveChanges();
                         MessageBox.Show("Bilgiler Kaydedilmiştir.");
                         cmbterazionek.DisplayMember = "TeraziOnEk";
                         cmbterazionek.ValueMember = "Id";
@@ -280,11 +286,11 @@ namespace BarkodluSatisProgrami
 
         private void bterazioneksil_Click(object sender, EventArgs e)
         {
-            if (cmbterazionek.Text!="")
+            if (cmbterazionek.Text != "")
             {
                 int onekid = Convert.ToInt16(cmbterazionek.SelectedValue);
                 DialogResult onay = MessageBox.Show(cmbterazionek.Text + " Öneki Silmek İstiyormusunuz ? ", "Terazi Önek Silme İşlemi", MessageBoxButtons.YesNo);
-                if (onay==DialogResult.Yes)
+                if (onay == DialogResult.Yes)
                 {
                     using (var db = new BarkodluSatisEntities())
                     {
@@ -293,14 +299,38 @@ namespace BarkodluSatisProgrami
                         db.SaveChanges();
                         cmbterazionek.DisplayMember = "TeraziOnEk";
                         cmbterazionek.ValueMember = "Id";
-                        cmbterazionek.DataSource = db.Terazi.ToList();  
-                        MessageBox.Show( " Önek Silinmiştir. " );
+                        cmbterazionek.DataSource = db.Terazi.ToList();
+                        MessageBox.Show(" Önek Silinmiştir. ");
                     }
                 }
             }
             else
             {
                 MessageBox.Show("Ön Ek Seçiniz.");
+            }
+        }
+
+        private void bisyerikaydet_Click(object sender, EventArgs e)
+        {
+            if (tisyeriadsoyad.Text != "" && tisyeriunvan.Text != "" && tisyeriadres.Text != "" && mskisyeritelefon.Text != "")
+            {
+                using (var db = new BarkodluSatisEntities())
+                {
+                    var isyeri = db.Sabit.FirstOrDefault();
+                    isyeri.AdSoyad = tisyeriadsoyad.Text;
+                    isyeri.Unvan = tisyeriunvan.Text;
+                    isyeri.Adres = tisyeriadres.Text;
+                    isyeri.Telefon = mskisyeritelefon.Text;
+                    isyeri.Eposta = tisyerieposta.Text;
+                    db.SaveChanges();
+                    MessageBox.Show("İşyeri Bilgileri Kaydedilmiştir.");
+                    var yeni = db.Sabit.FirstOrDefault();
+                    tisyeriadsoyad.Text = yeni.AdSoyad;
+                    tisyeriunvan.Text = yeni.Unvan;
+                    tisyeriadres.Text = yeni.Adres;
+                    mskisyeritelefon.Text = yeni.Telefon;
+                    tisyerieposta.Text = yeni.Eposta;
+                }
             }
         }
     }

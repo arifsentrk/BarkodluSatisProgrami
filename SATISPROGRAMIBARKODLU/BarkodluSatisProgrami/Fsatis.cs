@@ -6,6 +6,7 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,11 @@ namespace SATISPROGRAMIBARKODLU
             b50.Text = 50.ToString("C2");
             b100.Text = 100.ToString("C2");
             b200.Text = 200.ToString("C2");
+            using (var db = new BarkodluSatisEntities())
+            {
+                var sabit = db.Sabit.FirstOrDefault();
+                chyazdirmadurumu.Checked=Convert.ToBoolean(sabit.Yazici);
+            }
 
         }
 
@@ -135,7 +141,7 @@ namespace SATISPROGRAMIBARKODLU
 
         private void UrunGetirListeye(Urun urun, string barkod, double miktar)
         {
-            int satirsayisi = gridsatislistesi.Rows.Count;            
+            int satirsayisi = gridsatislistesi.Rows.Count;
             bool eklenmismi = false;
             if (satirsayisi > 0)
             {
@@ -446,8 +452,14 @@ namespace SATISPROGRAMIBARKODLU
 
                 var islemnoartir = db.İslem.First();
                 islemnoartir.Islemno += 1;
-                db.SaveChanges();
-                MessageBox.Show("Yazdırma işlemi yap");
+                db.SaveChanges();                
+
+                if (chyazdirmadurumu.Checked)
+                {
+                    yazdir Yazdir = new yazdir(islemno);                    
+                    Yazdir.yazdirmayabasla();
+                }
+
                 temizle();
 
             }

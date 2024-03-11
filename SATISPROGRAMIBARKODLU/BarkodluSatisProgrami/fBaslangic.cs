@@ -74,5 +74,10 @@ namespace BarkodluSatisProgrami
             fAyarlar f = new fAyarlar();
             f.ShowDialog();
         }
+
+        private void btnyedekleme_Click(object sender, EventArgs e)
+        {
+            islemler.Backup();
+        }
     }
 }

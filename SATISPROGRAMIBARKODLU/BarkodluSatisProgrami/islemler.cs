@@ -1,7 +1,9 @@
 ﻿using BarkodluSatisProgrami;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -176,6 +178,38 @@ namespace SATISPROGRAMIBARKODLU
                     db.SaveChanges();
                 }
 
+            }
+        }
+
+        public static void Backup()
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "Veri Yedek Dosyası|0.bak";
+            save.FileName="Barkodlu_Satis_Programi_"+ DateTime.Now.ToShortDateString();
+            if (save.ShowDialog()==DialogResult.OK)
+            {
+                try
+                {
+                    Cursor.Current = Cursors.WaitCursor;
+                    if (File.Exists(save.FileName))
+                    {
+                        File.Delete(save.FileName);
+                    }
+                    var dbhedef = save.FileName;
+                    string dbkaynak = Application.StartupPath + @"\BarkodluSatis.mdf";
+                    using (var db = new BarkodluSatisEntities())
+                    {
+                        var cmd = @"BACKUP DATABASE [" + dbkaynak + "] TO DISK = '" + dbhedef + "'";
+                        db.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction,cmd);
+                    }
+
+                    Cursor.Current = Cursors.Default;
+                    MessageBox.Show("Yedekleme Tamamlanmıştır.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
             }
         }
 

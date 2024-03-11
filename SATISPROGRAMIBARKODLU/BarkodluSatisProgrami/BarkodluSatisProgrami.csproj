@@ -226,6 +226,7 @@
     <Compile Include="UrunGrup.cs">
       <DependentUpon>BarkodluSatis.tt</DependentUpon>
     </Compile>
+    <Compile Include="yazdir.cs" />
     <Compile Include="İslem.cs">
       <DependentUpon>BarkodluSatis.tt</DependentUpon>
     </Compile>

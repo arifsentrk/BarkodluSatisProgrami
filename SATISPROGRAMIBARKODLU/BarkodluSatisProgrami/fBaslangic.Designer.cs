@@ -109,6 +109,7 @@
             this.btnyedekleme.TabIndex = 6;
             this.btnyedekleme.Text = "YEDEKLEME";
             this.btnyedekleme.UseVisualStyleBackColor = false;
+            this.btnyedekleme.Click += new System.EventHandler(this.btnyedekleme_Click);
             // 
             // btnfiyatguncelle
             // 

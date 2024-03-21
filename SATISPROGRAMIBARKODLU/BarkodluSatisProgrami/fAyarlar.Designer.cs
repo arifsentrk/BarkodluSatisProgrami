@@ -91,8 +91,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.chyazmadurumu = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.byedektenyukle = new SATISPROGRAMIBARKODLU.bstandart();
             this.lstandart19 = new SATISPROGRAMIBARKODLU.lstandart();
+            this.byedektenyukle = new SATISPROGRAMIBARKODLU.bstandart();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -832,6 +832,19 @@
             this.tabPage3.Text = "YEDEĞİ YÜKLE";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // lstandart19
+            // 
+            this.lstandart19.AutoSize = true;
+            this.lstandart19.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.lstandart19.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lstandart19.Location = new System.Drawing.Point(28, 32);
+            this.lstandart19.Name = "lstandart19";
+            this.lstandart19.Size = new System.Drawing.Size(418, 72);
+            this.lstandart19.TabIndex = 25;
+            this.lstandart19.Text = "Önceden Aldığınız Yedeği Belirleyiniz.\r\nButona Tıklayıp Yedeğinizi Tekrardan Yükl" +
+    "eyiniz.\r\nBu İşlemi Gerektiğinde Yapınız.";
+            this.lstandart19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // byedektenyukle
             // 
             this.byedektenyukle.BackColor = System.Drawing.Color.Tomato;
@@ -848,19 +861,7 @@
             this.byedektenyukle.Text = "YEDEKTEN YÜKLE (RESTORE)";
             this.byedektenyukle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.byedektenyukle.UseVisualStyleBackColor = false;
-            // 
-            // lstandart19
-            // 
-            this.lstandart19.AutoSize = true;
-            this.lstandart19.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
-            this.lstandart19.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lstandart19.Location = new System.Drawing.Point(28, 32);
-            this.lstandart19.Name = "lstandart19";
-            this.lstandart19.Size = new System.Drawing.Size(418, 72);
-            this.lstandart19.TabIndex = 25;
-            this.lstandart19.Text = "Önceden Aldığınız Yedeği Belirleyiniz.\r\nButona Tıklayıp Yedeğinizi Tekrardan Yükl" +
-    "eyiniz.\r\nBu İşlemi Gerektiğinde Yapınız.";
-            this.lstandart19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.byedektenyukle.Click += new System.EventHandler(this.byedektenyukle_Click);
             // 
             // fAyarlar
             // 

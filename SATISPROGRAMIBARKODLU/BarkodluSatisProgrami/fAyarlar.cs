@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace BarkodluSatisProgrami
 {
@@ -332,6 +333,12 @@ namespace BarkodluSatisProgrami
                     tisyerieposta.Text = yeni.Eposta;
                 }
             }
+        }
+
+        private void byedektenyukle_Click(object sender, EventArgs e)
+        {
+            Process.Start(Application.StartupPath + @"\ProgramRestore.exe");
+            Application.Exit();
         }
     }
 }

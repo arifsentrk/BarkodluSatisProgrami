@@ -93,6 +93,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lstandart19 = new SATISPROGRAMIBARKODLU.lstandart();
             this.byedektenyukle = new SATISPROGRAMIBARKODLU.bstandart();
+            this.lkullanici = new SATISPROGRAMIBARKODLU.lstandart();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -141,6 +142,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.Lid);
+            this.splitContainer1.Panel1.Controls.Add(this.lkullanici);
             this.splitContainer1.Panel1.Controls.Add(this.lstandart8);
             this.splitContainer1.Panel1.Controls.Add(this.chyedekleme);
             this.splitContainer1.Panel1.Controls.Add(this.chfiyatguncelle);
@@ -863,6 +865,17 @@
             this.byedektenyukle.UseVisualStyleBackColor = false;
             this.byedektenyukle.Click += new System.EventHandler(this.byedektenyukle_Click);
             // 
+            // lkullanici
+            // 
+            this.lkullanici.AutoSize = true;
+            this.lkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.lkullanici.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lkullanici.Location = new System.Drawing.Point(24, 543);
+            this.lkullanici.Name = "lkullanici";
+            this.lkullanici.Size = new System.Drawing.Size(86, 24);
+            this.lkullanici.TabIndex = 16;
+            this.lkullanici.Text = "lkullanici";
+            // 
             // fAyarlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -959,5 +972,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private SATISPROGRAMIBARKODLU.lstandart lstandart19;
         private SATISPROGRAMIBARKODLU.bstandart byedektenyukle;
+        internal SATISPROGRAMIBARKODLU.lstandart lkullanici;
     }
 }

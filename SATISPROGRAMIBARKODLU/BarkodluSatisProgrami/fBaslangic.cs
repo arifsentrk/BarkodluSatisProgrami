@@ -66,18 +66,28 @@ namespace BarkodluSatisProgrami
         private void btnfiyatguncelle_Click(object sender, EventArgs e)
         {
             fFiyatGuncelle f = new fFiyatGuncelle();
+            f.lkullanici.Text = lkullanici.Text;
             f.ShowDialog();
         }
 
         private void btnayarlar_Click(object sender, EventArgs e)
         {
             fAyarlar f = new fAyarlar();
+            f.lkullanici.Text = lkullanici.Text;
             f.ShowDialog();
         }
 
         private void btnyedekleme_Click(object sender, EventArgs e)
         {
             islemler.Backup();
+        }
+
+        private void btnkullanici_Click(object sender, EventArgs e)
+        {
+            fLogin login = new fLogin();
+            login.Show();
+            this.Hide();
+
         }
     }
 }

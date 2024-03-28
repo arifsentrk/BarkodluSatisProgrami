@@ -39,6 +39,7 @@
             this.lstandart2 = new SATISPROGRAMIBARKODLU.lstandart();
             this.lstandart1 = new SATISPROGRAMIBARKODLU.lstandart();
             this.tbarkod = new SATISPROGRAMIBARKODLU.tstandart();
+            this.lkullanici = new SATISPROGRAMIBARKODLU.lstandart();
             this.SuspendLayout();
             // 
             // bkaydet
@@ -166,6 +167,17 @@
             this.tbarkod.TabIndex = 1;
             this.tbarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbarkod_KeyDown);
             // 
+            // lkullanici
+            // 
+            this.lkullanici.AutoSize = true;
+            this.lkullanici.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold);
+            this.lkullanici.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lkullanici.Location = new System.Drawing.Point(16, 331);
+            this.lkullanici.Name = "lkullanici";
+            this.lkullanici.Size = new System.Drawing.Size(86, 24);
+            this.lkullanici.TabIndex = 61;
+            this.lkullanici.Text = "lkullanici";
+            // 
             // fFiyatGuncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -173,6 +185,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(399, 384);
             this.Controls.Add(this.bkaydet);
+            this.Controls.Add(this.lkullanici);
             this.Controls.Add(this.lstandart5);
             this.Controls.Add(this.tyenifiyat);
             this.Controls.Add(this.lfiyat);
@@ -207,5 +220,6 @@
         private SATISPROGRAMIBARKODLU.tnumeric tyenifiyat;
         private SATISPROGRAMIBARKODLU.lstandart lstandart5;
         private SATISPROGRAMIBARKODLU.bstandart bkaydet;
+        internal SATISPROGRAMIBARKODLU.lstandart lkullanici;
     }
 }

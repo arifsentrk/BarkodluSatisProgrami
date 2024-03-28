@@ -104,3 +104,4 @@ C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatis
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\bin\Debug\rpStokizleme.rdlc
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fFiyatGuncelle.resources
 C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fAyarlar.resources
+C:\Users\ARİF\Desktop\SatisProgramiBarkodlu\BarkodluSatisProgrami\BarkodluSatisProgrami\obj\Debug\BarkodluSatisProgrami.fLogin.resources

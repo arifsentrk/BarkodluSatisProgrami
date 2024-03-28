@@ -95,6 +95,7 @@
             this.btnkullanici.TabIndex = 7;
             this.btnkullanici.Text = "KULLANICI DEĞİŞTİR";
             this.btnkullanici.UseVisualStyleBackColor = false;
+            this.btnkullanici.Click += new System.EventHandler(this.btnkullanici_Click);
             // 
             // btnyedekleme
             // 
@@ -248,16 +249,16 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnsatisislemi;
-        private System.Windows.Forms.Button btncikis;
-        private System.Windows.Forms.Button btnkullanici;
-        private System.Windows.Forms.Button btnyedekleme;
-        private System.Windows.Forms.Button btnfiyatguncelle;
-        private System.Windows.Forms.Button btnayarlar;
-        private System.Windows.Forms.Button btnurungiris;
-        private System.Windows.Forms.Button btnstoktakibi;
-        private System.Windows.Forms.Button btngenelrapor;
-        private System.Windows.Forms.Label lkullanici;
-        private System.Windows.Forms.Label lisyeri;
+        public System.Windows.Forms.Button btnsatisislemi;
+        public System.Windows.Forms.Button btncikis;
+        public System.Windows.Forms.Button btnkullanici;
+        public System.Windows.Forms.Button btnyedekleme;
+        public System.Windows.Forms.Button btnfiyatguncelle;
+        public System.Windows.Forms.Button btnayarlar;
+        public System.Windows.Forms.Button btnurungiris;
+        public System.Windows.Forms.Button btnstoktakibi;
+        public System.Windows.Forms.Button btngenelrapor;
+        public System.Windows.Forms.Label lkullanici;
+        public System.Windows.Forms.Label lisyeri;
     }
 }
